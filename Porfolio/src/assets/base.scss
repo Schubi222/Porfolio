@@ -1,3 +1,60 @@
 $main-color:red;
-$primary-color:white;
-$call-to-action-color:blue;
+$primary-color:rgb(15 23 42);
+$call-to-action-color:rgb(94 234 212);
+$text-color:rgb(148 163 184);
+$standard-grey-boarder: 1px solid $text-color;
+a{
+  text-decoration: none;
+}
+#app {
+
+}
+
+html{
+  color: $text-color;
+}
+body{
+  background: $primary-color;
+  max-width: 1600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+.MenuBar{
+  padding: 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  &_link{
+    color: $text-color;
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    padding: clamp(1rem, 3vw, 2rem) clamp(3rem, 8vw, 12rem);
+    border: $standard-grey-boarder;
+    transition: .6s all ease-in-out;
+    position: relative;
+    &:hover{
+      border: 1px solid $call-to-action-color;
+      color: $call-to-action-color;
+    }
+    &:hover:before{
+      transition: width .6s ease;
+      width: 100%;
+
+    }
+    &:before{
+      content: "";
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 0;
+      height: 100%;
+      background: linear-gradient(
+      to right,
+      transparent 10%,
+      $call-to-action-color 190%,
+      );
+    }
+  }
+
+}

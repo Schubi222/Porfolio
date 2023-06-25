@@ -1,11 +1,10 @@
 <template>
-  <nav>
-    <RouterLink to="/">Home</RouterLink>
-    <RouterLink to="/projects">Projects</RouterLink>
-    <RouterLink to="/contact">Contact</RouterLink>
-    <RouterLink to="/about">About</RouterLink>
-    <RouterView />
+  <nav class="MenuBar">
+    <RouterLink class="MenuBar_link" to="/">Home</RouterLink>
+    <RouterLink class="MenuBar_link" to="/projects">Projects</RouterLink>
+    <RouterLink class="MenuBar_link" to="/about">About</RouterLink>
   </nav>
+  <RouterView />
 </template>
 
 <script setup>
