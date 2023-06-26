@@ -9,7 +9,5 @@
 </script>
 
 <style scoped>
-#HomeView{
-  background: red;
-}
+
 </style>

@@ -16,12 +16,12 @@ body {
   width: 100vw;
 }
 
-.MenuBar {
+.Menu-bar {
   padding: 1rem 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-.MenuBar_link {
+.Menu-bar__link {
   color: rgb(148, 163, 184);
   font-size: clamp(1.5rem, 3vw, 3rem);
   padding: clamp(1rem, 3vw, 2rem) clamp(3rem, 8vw, 12rem);
@@ -29,15 +29,15 @@ body {
   transition: 0.6s all ease-in-out;
   position: relative;
 }
-.MenuBar_link:hover {
+.Menu-bar__link:hover {
   border: 1px solid rgb(94, 234, 212);
   color: rgb(94, 234, 212);
 }
-.MenuBar_link:hover:before {
+.Menu-bar__link:hover:before {
   transition: width 0.6s ease;
   width: 100%;
 }
-.MenuBar_link:before {
+.Menu-bar__link:before {
   content: "";
   position: absolute;
   left: 0px;
@@ -45,6 +45,62 @@ body {
   width: 0;
   height: 100%;
   background: linear-gradient(to right, transparent 10%, rgb(94, 234, 212) 190%);
+}
+
+.Menu-bar-mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  height: 51px;
+  padding: 10px;
+  width: 100vw;
+}
+.Menu-bar-mobile__hover-box {
+  display: flex;
+  height: 51px;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+.Menu-bar-mobile__hamburger, .Menu-bar-mobile__hamburger:before, .Menu-bar-mobile__hamburger:after {
+  transition: all 0.5s ease-in-out;
+  width: 60px;
+  height: 7px;
+  border-radius: 25px;
+  background: rgb(148, 163, 184);
+  content: "";
+}
+.Menu-bar-mobile__hamburger:before {
+  transform: translate(0, -15px);
+  position: absolute;
+}
+.Menu-bar-mobile__hamburger:after {
+  transform: translate(0, 15px);
+  position: absolute;
+}
+.Menu-bar-mobile__hamburger.is_open {
+  transform: translateX(-20px);
+  background: transparent !important;
+  box-shadow: none;
+}
+.Menu-bar-mobile__hamburger.is_open:before {
+  transform: rotate(45deg) translate(15px, -15px);
+}
+.Menu-bar-mobile__hamburger.is_open:after {
+  transform: rotate(-45deg) translate(15px, 15px);
+}
+.Menu-bar-mobile__hover-box:hover .Menu-bar-mobile__hamburger, .Menu-bar-mobile__hover-box:hover .Menu-bar-mobile__hamburger:before, .Menu-bar-mobile__hover-box:hover .Menu-bar-mobile__hamburger:after {
+  background: rgb(94, 234, 212);
+}
+.Menu-bar-mobile__side-panel {
+  position: fixed;
+  left: -10px;
+  height: 100vh;
+  width: 300px;
+  background: white;
+  display: none;
 }
 
 /*# sourceMappingURL=base.css.map */

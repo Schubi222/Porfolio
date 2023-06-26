@@ -22,11 +22,11 @@ body{
   height: 100vh;
   width: 100vw;
 }
-.MenuBar{
+.Menu-bar{
   padding: 1rem 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  &_link{
+  &__link{
     color: $text-color;
     font-size: clamp(1.5rem, 3vw, 3rem);
     padding: clamp(1rem, 3vw, 2rem) clamp(3rem, 8vw, 12rem);
@@ -58,3 +58,71 @@ body{
   }
 
 }
+.Menu-bar-mobile{
+  position: fixed;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  height: 51px;
+  padding: 10px;
+  width: 100vw;
+
+  &__hover-box{
+    display: flex;
+    height: 51px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+  }
+  &__hamburger{
+    //position: relative;
+    //top:25px;
+    &, &:before,&:after{
+      transition: all .5s ease-in-out;
+      width: 60px;
+      height: 7px;
+      border-radius: 25px;
+      background: $text-color;
+      content: "";
+    }
+    &:before{
+      //top: 19px;
+      transform: translate(0, -15px);
+      position: absolute;
+    }
+    &:after{
+      //top: 45px;
+      transform: translate(0, 15px);
+      position: absolute;
+    }
+    &.is_open{
+      transform: translateX(-20px);
+      background: transparent !important;
+      box-shadow: none;
+    }
+    &.is_open:before{
+      transform: rotate(45deg) translate(15px, -15px);
+    }
+    &.is_open:after{
+      transform: rotate(-45deg) translate(15px, 15px);
+    }
+
+  }
+  &__hover-box:hover &__hamburger,  &__hover-box:hover &__hamburger:before,  &__hover-box:hover &__hamburger:after{
+    background: $call-to-action-color;
+  }
+
+  &__side-panel{
+    position: fixed;
+    left: -10px;
+    height: 100vh;
+    width: 300px;
+    background: white;
+    display: none;
+  }
+
+
+}
+
+
