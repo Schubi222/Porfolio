@@ -14,14 +14,17 @@ body {
   flex-direction: column;
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
 }
 
 .Menu-bar {
   padding: 1rem 0;
+  margin: 0 1rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 .Menu-bar__link {
+  text-align: center;
   color: rgb(148, 163, 184);
   font-size: clamp(1.5rem, 3vw, 3rem);
   padding: clamp(1rem, 3vw, 2rem) clamp(3rem, 8vw, 12rem);
@@ -40,20 +43,20 @@ body {
 .Menu-bar__link:before {
   content: "";
   position: absolute;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   width: 0;
   height: 100%;
   background: linear-gradient(to right, transparent 10%, rgb(94, 234, 212) 190%);
 }
 
 .Menu-bar-mobile {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
   cursor: pointer;
   height: 51px;
-  padding: 10px;
   width: 100vw;
 }
 .Menu-bar-mobile__hover-box {
@@ -63,6 +66,8 @@ body {
   justify-content: center;
   align-items: center;
   position: fixed;
+  z-index: 10;
+  padding: 10px;
 }
 .Menu-bar-mobile__hamburger, .Menu-bar-mobile__hamburger:before, .Menu-bar-mobile__hamburger:after {
   transition: all 0.5s ease-in-out;
@@ -91,16 +96,46 @@ body {
 .Menu-bar-mobile__hamburger.is_open:after {
   transform: rotate(-45deg) translate(15px, 15px);
 }
+.Menu-bar-mobile__hamburger.is_open, .Menu-bar-mobile__hamburger.is_open:before, .Menu-bar-mobile__hamburger.is_open:after {
+  background: rgb(94, 234, 212);
+}
 .Menu-bar-mobile__hover-box:hover .Menu-bar-mobile__hamburger, .Menu-bar-mobile__hover-box:hover .Menu-bar-mobile__hamburger:before, .Menu-bar-mobile__hover-box:hover .Menu-bar-mobile__hamburger:after {
   background: rgb(94, 234, 212);
 }
 .Menu-bar-mobile__side-panel {
   position: fixed;
-  left: -10px;
+  bottom: 0;
+  height: 0;
+  width: 101vw;
+  background: darkgray;
+  z-index: 9;
+  transition: all 1s ease-in-out;
+}
+.Menu-bar-mobile__side-panel.is_open {
   height: 100vh;
-  width: 300px;
-  background: white;
-  display: none;
+}
+.Menu-bar-mobile__side-panel__link-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-right: 0;
+}
+.Menu-bar-mobile__side-panel__link-container__link {
+  font-size: clamp(1.5rem, 3vw, 3rem);
+  padding: clamp(1rem, 3vw, 2rem) clamp(1.5rem, 3vw, 3rem);
+  color: rgb(15, 23, 42);
+}
+.Menu-bar-mobile__side-panel__link-container__link:hover {
+  color: #1c2c50;
+}
+
+@media (max-width: 1024px) {
+  .Menu-bar-mobile {
+    display: unset;
+  }
+  .Menu-bar {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=base.css.map */

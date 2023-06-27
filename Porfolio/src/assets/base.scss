@@ -1,8 +1,15 @@
+//COLORS
 $main-color:red;
 $primary-color:rgb(15 23 42);
 $call-to-action-color:rgb(94 234 212);
 $text-color:rgb(148 163 184);
+//BOARDERS
 $standard-grey-boarder: 1px solid $text-color;
+//MEDIA QUERIES
+$mobile:1024px;
+
+
+
 a{
   text-decoration: none;
 }
@@ -21,12 +28,15 @@ body{
   flex-direction: column;
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
 }
 .Menu-bar{
   padding: 1rem 0;
+  margin: 0 1rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   &__link{
+    text-align: center;
     color: $text-color;
     font-size: clamp(1.5rem, 3vw, 3rem);
     padding: clamp(1rem, 3vw, 2rem) clamp(3rem, 8vw, 12rem);
@@ -45,8 +55,8 @@ body{
     &:before{
       content: "";
       position: absolute;
-      left: 0px;
-      top: 0px;
+      left: 0;
+      top: 0;
       width: 0;
       height: 100%;
       background: linear-gradient(
@@ -59,12 +69,13 @@ body{
 
 }
 .Menu-bar-mobile{
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
   cursor: pointer;
   height: 51px;
-  padding: 10px;
+
   width: 100vw;
 
   &__hover-box{
@@ -74,8 +85,11 @@ body{
     justify-content: center;
     align-items: center;
     position: fixed;
+    z-index: 10;
+    padding: 10px;
   }
   &__hamburger{
+
     //position: relative;
     //top:25px;
     &, &:before,&:after{
@@ -107,6 +121,9 @@ body{
     &.is_open:after{
       transform: rotate(-45deg) translate(15px, 15px);
     }
+    &.is_open, &.is_open:before, &.is_open:after{
+      background: $call-to-action-color;
+    }
 
   }
   &__hover-box:hover &__hamburger,  &__hover-box:hover &__hamburger:before,  &__hover-box:hover &__hamburger:after{
@@ -115,14 +132,42 @@ body{
 
   &__side-panel{
     position: fixed;
-    left: -10px;
-    height: 100vh;
-    width: 300px;
-    background: white;
-    display: none;
+    bottom: 0;
+    height: 0;
+    width: 101vw;
+    background: darkgray;
+    z-index: 9;
+    transition: all 1s ease-in-out;
+    //display: none;
+    &.is_open{
+      height: 100vh;
+    }
+    &__link-container{
+      display: flex;
+      flex-direction: column;
+      padding-top: 100px;
+      padding-right: 0;
+      &__link{
+        font-size: clamp(1.5rem, 3vw, 3rem);
+        padding: clamp(1rem, 3vw, 2rem) clamp(1.5rem, 3vw, 3rem);
+        color: $primary-color;
+        &:hover{
+          color:lighten($primary-color, 10%);
+        }
+      }
+    }
   }
 
+}
 
+@media (max-width: $mobile) {
+  .Menu-bar-mobile{
+    display: unset;
+
+  }
+  .Menu-bar{
+    display: none;
+  }
 }
 
 
