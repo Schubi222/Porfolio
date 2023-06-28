@@ -37,5 +37,5 @@ const toggle_mobile_menu = () =>{
 </script>
 
 <style scoped>
-
+  @import "@/assets/MenuBar.css";
 </style>

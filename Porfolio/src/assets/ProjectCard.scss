@@ -1,0 +1,56 @@
+
+.Project-Card{
+  overflow: hidden;
+  width: 250px;
+  height: 250px;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+
+  &__img{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    transition: width .2s ease-in-out, height .2s ease-in-out, filter .2s .1s ease-in-out;
+  }
+  &:hover &__img{
+    filter: blur(4px);
+    width: 110%;
+    height: 110%;
+
+
+  }
+  &:hover .Hover-Wrapper{
+    opacity: 1;
+  }
+}
+.Hover-Wrapper{
+  position: absolute;
+  top: 0;
+  background: rgba(0, 0, 0, 0.4);
+  height: 105%;
+  width: 105%;
+  display: flex;
+  flex-direction: column;
+  Box-sizing: border-box;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity .3s .2s ease-in-out;
+  &__heading{
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    color: #e5e5e5;
+  }
+  &__text{
+    font-size: 14px;
+    line-height: 20px;
+    color: #e5e5e5;
+  }
+}
