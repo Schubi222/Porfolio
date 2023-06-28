@@ -17,7 +17,7 @@
     height: 100%;
     margin: 0;
     padding: 0;
-    transition: width .2s ease-in-out, height .2s ease-in-out, filter .2s .1s ease-in-out;
+    transition: width .6s ease-in-out, height .6s ease-in-out, filter .2s .1s ease-in-out;
   }
   &:hover &__img{
     filter: blur(4px);

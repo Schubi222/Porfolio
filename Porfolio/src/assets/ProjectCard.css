@@ -16,7 +16,7 @@
   height: 100%;
   margin: 0;
   padding: 0;
-  transition: width 0.2s ease-in-out, height 0.2s ease-in-out, filter 0.2s 0.1s ease-in-out;
+  transition: width 0.6s ease-in-out, height 0.6s ease-in-out, filter 0.2s 0.1s ease-in-out;
 }
 .Project-Card:hover .Project-Card__img {
   filter: blur(4px);
