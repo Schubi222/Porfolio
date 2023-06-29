@@ -6,6 +6,11 @@ html {
   color: rgb(148, 163, 184);
 }
 
+header {
+  min-height: 60px;
+  z-index: 10;
+}
+
 body {
   background: rgb(15, 23, 42);
   max-width: 1600px;
@@ -18,6 +23,7 @@ body {
 }
 
 .Menu-bar {
+  z-index: 10;
   padding: 1rem 0;
   margin: 0 1rem;
   display: grid;
@@ -51,6 +57,7 @@ body {
 }
 
 .Menu-bar-mobile {
+  z-index: 10;
   display: none;
   position: fixed;
   top: 0;

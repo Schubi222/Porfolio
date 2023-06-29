@@ -1,15 +1,15 @@
 <script setup>
 import MenuBar from '@/components/MenuBar.vue'
+import { RouterView } from 'vue-router'
 </script>
 
 <template>
   <header>
-
+    <MenuBar/>
   </header>
   <body>
 
-    <MenuBar/>
-
+  <RouterView />
   </body>
 
 

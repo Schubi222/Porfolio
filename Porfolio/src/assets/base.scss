@@ -14,11 +14,15 @@ a{
   text-decoration: none;
 }
 #app {
-
+  //box-sizing: border-box;
 }
 
 html{
   color: $text-color;
+}
+header{
+  min-height: 60px;
+  z-index: 10;
 }
 body{
   background: $primary-color;

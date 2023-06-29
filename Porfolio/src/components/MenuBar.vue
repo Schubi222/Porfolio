@@ -17,11 +17,11 @@
 
     </div>
   </div>
-  <RouterView />
+
 </template>
 
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterLink } from 'vue-router'
 import {ref} from "vue";
 
 const hamburger_div = ref()

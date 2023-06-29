@@ -4,7 +4,7 @@
     <img :src="'./src/assets/imgs/'+img_src" alt="Image representing the project" class="Project-Card__img">
     <div class="Hover-Wrapper">
       <div class="Hover-Wrapper__heading">{{heading}}</div>
-      <div class="Hover-Wrapper__text" v-for="tag in project_tags" :key="tag">{{tag}}</div>
+      <div class="Hover-Wrapper__text" v-for="tag in tags" :key="tag">{{tag}}</div>
     </div>
   </div>
 </RouterLink>
@@ -12,16 +12,27 @@
 
 <script setup>
   import {RouterLink} from "vue-router";
-  import {ref} from "vue";
+  import {computed, ref} from "vue";
+
+  const props = defineProps(['project'])
+
+  const tags = ref(props.project.tags)
+  const heading = ref(props.project.name)
+  const img_src = ref(props.project.img)
+  const router_link = ref(props.project.link)
+  const width = ref(props.project.width);
+
+  const width_with_px = computed(()=>{
+    return width.value+'px'
+  })
 
 
-  const project_tags = ref(['Beginner', 'Vue.js'])
-  const heading = ref('Calculator')
-  const img_src = ref('Calculator.png')
-  const router_link = ref('projects/calculator')
 
 </script>
 
 <style scoped>
 @import '../assets/ProjectCard.css';
+.Project-Card{
+  width: v-bind(width_with_px);
+}
 </style>
