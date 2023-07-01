@@ -1,3 +1,7 @@
+.Project-Card-Link {
+  width: fit-content;
+}
+
 .Project-Card {
   overflow: hidden;
   width: 250px;

@@ -1,9 +1,10 @@
 @import "base";
-$text-size: 24px;
-$line-height: 36px;
+$text-size: max(24px,3.5cqi);
+$line-height: max(36px,4.6cqi);
 .Text-Field-Wrapper{
   word-break:normal;
   word-wrap: normal;
+  container-type: inline-size;
   &__text{
     width: 100%;
     line-height: $line-height;

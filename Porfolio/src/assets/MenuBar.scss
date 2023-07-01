@@ -45,7 +45,7 @@
   top: 0;
   left: 0;
   cursor: pointer;
-  height: 51px;
+  height: 100px;
 
   width: 100vw;
 
@@ -105,10 +105,11 @@
     position: fixed;
     bottom: 0;
     height: 0;
-    width: 101vw;
+    width: 100vw;
     background: darkgray;
     z-index: 9;
     transition: all 1s ease-in-out;
+
     //display: none;
     &.is_open{
       height: 100vh;

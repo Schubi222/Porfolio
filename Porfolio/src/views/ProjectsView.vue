@@ -1,6 +1,10 @@
 <template>
-  <PerfectTextField class="Welcome-Text-Field" :heading="heading_welcome" :text="text_welcome"/>
-  <ProjectCard v-for="project in projects" :key="project.name" :project="project"/>
+  <div class="Project-View-Wrapper">
+    <div class="Project-View-Wrapper__first-row Project-View-Wrapper__rom">
+      <PerfectTextField class="Welcome-Text-Field" :heading="heading_welcome" :text="text_welcome"/>
+      <ProjectCard v-for="project in projects" :key="project.name" :project="project"/>
+    </div>
+  </div>
 </template>
 
 <script setup>
@@ -25,8 +29,18 @@ const projects = ref([project_object])
 </script>
 
 <style scoped>
-.Welcome-Text-Field{
+.Project-View-Wrapper{
+  display: flex;
+}
+.Project-View-Wrapper__first-row{
+  width: 100%;
+  height: 250px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  overflow: hidden;
+}
+/*.Welcome-Text-Field{
   width: 500px;
   height: 250px;
-}
+}*/
 </style>

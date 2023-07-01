@@ -7,7 +7,7 @@ html {
 }
 
 header {
-  min-height: 60px;
+  min-height: 100px;
   z-index: 10;
 }
 
@@ -25,16 +25,17 @@ body {
 .Text-Field-Wrapper {
   word-break: normal;
   word-wrap: normal;
+  container-type: inline-size;
 }
 .Text-Field-Wrapper__text {
   width: 100%;
-  line-height: 36px;
-  font-size: 24px;
+  line-height: max(36px, 4.6cqi);
+  font-size: max(24px, 3.5cqi);
 }
 .Text-Field-Wrapper__heading {
   color: white;
-  line-height: 36px;
-  font-size: 24px;
+  line-height: max(36px, 4.6cqi);
+  font-size: max(24px, 3.5cqi);
   font-weight: 600;
 }
 
