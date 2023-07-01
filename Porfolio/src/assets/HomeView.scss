@@ -1,0 +1,13 @@
+.Home-View{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  container-type: inline-size;
+  /*TODO: THINK ABOUT CENTER OR NOT*/
+  text-align: center;
+  &__text-field{
+    width: clamp(500px, 270px + 30cqi,750px);
+  }
+}
