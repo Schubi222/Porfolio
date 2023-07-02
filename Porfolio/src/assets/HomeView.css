@@ -1,4 +1,4 @@
-.Home-View{
+.Home-View {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -8,9 +8,10 @@
   container-type: inline-size;
   /*TODO: THINK ABOUT CENTER OR NOT*/
   text-align: center;
-  &__text-field{
-    width: clamp(500px, 270px + 30cqi,750px);
-    padding: 2rem 0;
-  }
-
 }
+.Home-View__text-field {
+  width: clamp(500px, 270px + 30cqi, 750px);
+  padding: 2rem 0;
+}
+
+/*# sourceMappingURL=HomeView.css.map */
