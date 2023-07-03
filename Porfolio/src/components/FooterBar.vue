@@ -2,15 +2,21 @@
   <div class="Footer-Bar-Wrapper">
     <div class="Footer-Bar-Wrapper__Copyright">© 2023 Fabian Schubert</div>
     <div class="Footer-Bar-Wrapper__icon-wrapper">
-      <div class="Footer-Bar-Wrapper__icon-wrapper__icon">GH</div>
-      <div class="Footer-Bar-Wrapper__icon-wrapper__icon">LI</div>
+      <a href="https://github.com/Schubi222">
+        <img class="Footer-Bar-Wrapper__icon-wrapper__icon" src="@/assets/imgs/github_logo.png" alt="github logo"/>
+      </a>
+      <a href="https://www.linkedin.com/in/fabian-schubert-899914278/">
+        <img class="Footer-Bar-Wrapper__icon-wrapper__icon" src="@/assets/imgs/linkedin.png" alt="linkedIn logo"/>
+      </a>
     </div>
-    <div class="Footer-Bar-Wrapper__imprint">IMPRINT</div>
+    <RouterLink to="/imprint">
+      <div class="Footer-Bar-Wrapper__imprint">IMPRINT</div>
+    </RouterLink>
   </div>
 </template>
 
 <script setup>
-
+import {RouterLink} from "vue-router";
 </script>
 
 <style scoped>
