@@ -26,13 +26,7 @@
     );
     transition: all .4s ease;
   }
-/*  &:hover {
-    color: darken($call-to-action-color, 20%);
-    border-color: darken($call-to-action-color, 20%);
-    box-shadow: 0 1px 1px darken($call-to-action-color, 20%);
-  }*/
   &:hover:before{
-
     width: 100%;
   }
 

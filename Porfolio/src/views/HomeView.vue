@@ -18,8 +18,9 @@
       <swiper-slide class="swiper_custom_slide">Slide 3</swiper-slide>
       <swiper-slide class="swiper_custom_slide">Slide 4</swiper-slide>
     </swiper>
-   <RouterLink class="btn big_btn" to="/projects">All Projects</RouterLink>
-
+    <RouterLink class="btn big_btn" to="/projects">All Projects</RouterLink>
+    <!--  TODO: GITHUB-->
+    <!--  TODO: Contact-->
   </div>
 </template>
 

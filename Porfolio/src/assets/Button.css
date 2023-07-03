@@ -36,11 +36,6 @@ body {
   box-shadow: 0 1px 1px rgb(94, 234, 212);
   position: relative;
   overflow: hidden;
-  /*  &:hover {
-      color: darken($call-to-action-color, 20%);
-      border-color: darken($call-to-action-color, 20%);
-      box-shadow: 0 1px 1px darken($call-to-action-color, 20%);
-    }*/
 }
 .btn:before {
   height: 100%;
