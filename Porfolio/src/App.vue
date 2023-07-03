@@ -1,5 +1,6 @@
 <script setup>
 import MenuBar from '@/components/MenuBar.vue'
+import FooterBar from "@/components/FooterBar.vue";
 import { RouterView } from 'vue-router'
 </script>
 
@@ -7,12 +8,14 @@ import { RouterView } from 'vue-router'
   <header>
     <MenuBar/>
   </header>
-  <body>
 
+  <div class="Main-Content">
   <RouterView />
-  </body>
+  </div>
 
-
+  <div class="footer_div">
+    <FooterBar/>
+  </div>
 </template>
 
 <style scoped>
