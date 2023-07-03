@@ -71,9 +71,25 @@ body {
   width: 30px;
   height: 30px;
   text-align: center;
+  border-radius: 50%;
+  transition: color 0.3s ease-in-out;
 }
 .Footer-Bar-Wrapper__imprint {
   justify-self: end;
+  color: rgb(148, 163, 184);
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+.Footer-Bar-Wrapper__imprint:hover {
+  color: rgb(94, 234, 212);
+}
+
+.linked_in:hover {
+  background-color: #0077b5;
+}
+
+.github:hover {
+  background-color: black;
 }
 
 /*# sourceMappingURL=FooterBar.css.map */

@@ -3,14 +3,14 @@
     <div class="Footer-Bar-Wrapper__Copyright">© 2023 Fabian Schubert</div>
     <div class="Footer-Bar-Wrapper__icon-wrapper">
       <a href="https://github.com/Schubi222">
-        <img class="Footer-Bar-Wrapper__icon-wrapper__icon" src="@/assets/imgs/github_logo.png" alt="github logo"/>
+        <img class="Footer-Bar-Wrapper__icon-wrapper__icon github" src="@/assets/imgs/github_logo.png" alt="github logo"/>
       </a>
       <a href="https://www.linkedin.com/in/fabian-schubert-899914278/">
-        <img class="Footer-Bar-Wrapper__icon-wrapper__icon" src="@/assets/imgs/linkedin.png" alt="linkedIn logo"/>
+        <img class="Footer-Bar-Wrapper__icon-wrapper__icon linked_in" src="@/assets/imgs/linkedin.png" alt="linkedIn logo"/>
       </a>
     </div>
-    <RouterLink to="/imprint">
-      <div class="Footer-Bar-Wrapper__imprint">IMPRINT</div>
+    <RouterLink to="/imprint" class="Footer-Bar-Wrapper__imprint">
+      <div>IMPRINT</div>
     </RouterLink>
   </div>
 </template>
