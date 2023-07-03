@@ -1,3 +1,4 @@
+@import "base";
 .Home-View{
   display: flex;
   justify-content: center;
@@ -11,6 +12,15 @@
   &__text-field{
     width: clamp(500px, 270px + 30cqi,750px);
     padding: 2rem 0;
+    height: fit-content;
   }
 
+}
+
+@media (max-width: $mobile) {
+  .Home-View{
+    &__text-field{
+      width: 95%;
+    }
+  }
 }

@@ -1,3 +1,29 @@
+a {
+  text-decoration: none;
+}
+
+html {
+  color: rgb(148, 163, 184);
+}
+
+header {
+  min-height: 100px;
+  z-index: 10;
+  padding: 2px;
+}
+
+body {
+  background: rgb(15, 23, 42);
+  max-width: 1600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  padding: 5px;
+}
+
 .Home-View {
   display: flex;
   justify-content: center;
@@ -12,6 +38,13 @@
 .Home-View__text-field {
   width: clamp(500px, 270px + 30cqi, 750px);
   padding: 2rem 0;
+  height: fit-content;
+}
+
+@media (max-width: 1024px) {
+  .Home-View__text-field {
+    width: 95%;
+  }
 }
 
 /*# sourceMappingURL=HomeView.css.map */

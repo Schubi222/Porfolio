@@ -1,0 +1,51 @@
+a {
+  text-decoration: none;
+}
+
+html {
+  color: rgb(148, 163, 184);
+}
+
+header {
+  min-height: 100px;
+  z-index: 10;
+  padding: 2px;
+}
+
+body {
+  background: rgb(15, 23, 42);
+  max-width: 1600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  padding: 5px;
+}
+
+.btn {
+  border: 1px solid rgb(94, 234, 212);
+  color: rgb(94, 234, 212);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  padding: 7px 10px;
+  font-size: 1.2rem;
+  line-height: 1.65rem;
+  border-radius: 9999px;
+  box-shadow: 0 1px 1px rgb(94, 234, 212);
+}
+.btn:hover {
+  color: #1ac8ad;
+  border-color: #1ac8ad;
+  box-shadow: 0 1px 1px #1ac8ad;
+}
+
+.big_btn {
+  font-size: 2rem;
+  line-height: 2.75rem;
+  padding: 13px 20px;
+  border-radius: 9999px;
+}
+
+/*# sourceMappingURL=Button.css.map */
