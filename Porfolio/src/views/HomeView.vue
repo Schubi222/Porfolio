@@ -7,11 +7,9 @@
         :slides-per-view="4"
         :space-between="30"
         :parallax="true"
-        :scrollbar="{
-          hidden: false,
-          enabled: true,
-        }"
+        :scrollbar="true"
         :modules="modules"
+
         class="mySwiper">
       <swiper-slide class="swiper_custom_slide"><img src="@/assets/imgs/Calculator.png" alt=""></swiper-slide>
       <swiper-slide class="swiper_custom_slide">Slide 2</swiper-slide>

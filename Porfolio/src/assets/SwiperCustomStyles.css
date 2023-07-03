@@ -3,26 +3,47 @@ a {
   text-decoration: none;
 }
 
+#app {
+  height: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: grid;
+  grid-template-rows: fit-content(500px) auto auto;
+}
+
 html {
   color: rgb(148, 163, 184);
+  overflow: auto;
+  height: fit-content;
 }
 
 header {
-  min-height: 100px;
+  height: fit-content(200px);
   z-index: 10;
   padding: 2px;
+  align-self: start;
 }
 
 body {
   background: rgb(15, 23, 42);
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.Main-Content {
   max-width: 1600px;
-  margin: auto;
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
+  width: 100%;
   padding: 5px;
+  align-self: start;
+}
+
+.footer_div {
+  margin-top: auto;
+  place-self: end !important;
+  width: 100%;
 }
 
 .swiper-scrollbar {
@@ -43,7 +64,7 @@ body {
 .mySwiper {
   margin: 0 20rem;
   width: 80%;
-  height: 410px;
+  height: 440px !important;
   padding: 5rem 20rem;
   overflow: hidden;
 }

@@ -45,27 +45,28 @@ body {
   width: 100%;
 }
 
-.Home-View {
+.Footer-Bar-Wrapper {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  container-type: inline-size;
-  /*TODO: THINK ABOUT CENTER OR NOT*/
+  border-top: 1px solid;
+  border-image: radial-gradient(circle, rgb(148, 163, 184) 65%, rgb(15, 23, 42) 90%) 10;
+  margin-top: 5rem;
+}
+.Footer-Bar-Wrapper__icon-wrapper {
+  display: flex;
+  gap: 1rem;
+}
+.Footer-Bar-Wrapper__icon-wrapper__icon {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgb(148, 163, 184);
   text-align: center;
 }
-.Home-View__text-field {
-  width: clamp(500px, 270px + 30cqi, 750px);
-  padding: 2rem 0;
-  height: fit-content;
-}
 
-@media (max-width: 1024px) {
-  .Home-View__text-field {
-    width: 95%;
-  }
-}
-
-/*# sourceMappingURL=HomeView.css.map */
+/*# sourceMappingURL=FooterBar.css.map */
