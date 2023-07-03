@@ -9,15 +9,38 @@
   line-height: 1.65rem;
   border-radius: 9999px;
   box-shadow: 0 1px 1px $call-to-action-color;
-  &:hover{
+  position: relative;
+  overflow: hidden;
+  &:before{
+    height: 100%;
+    width: 0;
+    position: absolute;
+    top:0;
+    left: 0;
+    content: "";
+    border-radius: 9999px;
+    background: linear-gradient(
+                    to right,
+                    transparent 10%,
+                    $call-to-action-color 190%,
+    );
+    transition: all .4s ease;
+  }
+/*  &:hover {
     color: darken($call-to-action-color, 20%);
     border-color: darken($call-to-action-color, 20%);
-    box-shadow: 0 1px  1px darken($call-to-action-color, 20%);
+    box-shadow: 0 1px 1px darken($call-to-action-color, 20%);
+  }*/
+  &:hover:before{
+
+    width: 100%;
   }
+
 }
 .big_btn{
   font-size: 2rem;
   line-height: 2.75rem;
   padding: 13px 20px;
   border-radius: 9999px;
+
 }
