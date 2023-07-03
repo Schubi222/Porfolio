@@ -9,11 +9,23 @@ $line-height: max(36px,4.6cqi);
     width: 100%;
     line-height: $line-height;
     font-size: $text-size;
+    height: fit-content;
+    word-break:normal;
+    word-wrap: normal;
   }
   &__heading{
     color: lighten($text-color, 50%);
     line-height: $line-height;
     font-size: $text-size;
     font-weight: 600;
+  }
+  &__link{
+    cursor: pointer;
+    color: $call-to-action-color;
+    line-height: $line-height;
+    transition: color .3s ease-in-out;
+    &:hover{
+      color: darken($call-to-action-color, 20%);
+    }
   }
 }

@@ -33,12 +33,24 @@ body {
   width: 100%;
   line-height: max(36px, 4.6cqi);
   font-size: max(24px, 3.5cqi);
+  height: fit-content;
+  word-break: normal;
+  word-wrap: normal;
 }
 .Text-Field-Wrapper__heading {
   color: white;
   line-height: max(36px, 4.6cqi);
   font-size: max(24px, 3.5cqi);
   font-weight: 600;
+}
+.Text-Field-Wrapper__link {
+  cursor: pointer;
+  color: rgb(94, 234, 212);
+  line-height: max(36px, 4.6cqi);
+  transition: color 0.3s ease-in-out;
+}
+.Text-Field-Wrapper__link:hover {
+  color: #1ac8ad;
 }
 
 /*# sourceMappingURL=TextField.css.map */
