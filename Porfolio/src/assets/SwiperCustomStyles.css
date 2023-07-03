@@ -1,4 +1,5 @@
 /*THIS STYLE IS GLOBAL*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 a {
   text-decoration: none;
 }
@@ -9,12 +10,14 @@ a {
   position: relative;
   display: grid;
   grid-template-rows: fit-content(500px) auto auto;
+  margin: 1rem;
 }
 
 html {
   color: rgb(148, 163, 184);
   overflow: auto;
   height: fit-content;
+  font-family: "Roboto", sans-serif;
 }
 
 header {

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 a {
   text-decoration: none;
 }
@@ -8,12 +9,14 @@ a {
   position: relative;
   display: grid;
   grid-template-rows: fit-content(500px) auto auto;
+  margin: 1rem;
 }
 
 html {
   color: rgb(148, 163, 184);
   overflow: auto;
   height: fit-content;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -48,7 +51,6 @@ body {
 .Menu-bar {
   z-index: 10;
   padding: 1rem 0;
-  margin: 0 1rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -56,10 +58,11 @@ body {
   text-align: center;
   color: rgb(148, 163, 184);
   font-size: clamp(1.5rem, 3vw, 3rem);
-  padding: clamp(1rem, 3vw, 2rem) clamp(3rem, 8vw, 12rem);
+  padding: clamp(1rem, 3vw, 2rem) clamp(3rem, 8vw, 11rem);
   border: 1px solid rgb(148, 163, 184);
   transition: 0.6s all ease-in-out;
   position: relative;
+  box-sizing: border-box;
 }
 .Menu-bar__link:hover {
   border: 1px solid rgb(94, 234, 212);

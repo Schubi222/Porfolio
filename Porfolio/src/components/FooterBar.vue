@@ -10,7 +10,7 @@
       </a>
     </div>
     <RouterLink to="/imprint" class="Footer-Bar-Wrapper__imprint">
-      <div>IMPRINT</div>
+      <div>Imprint</div>
     </RouterLink>
   </div>
 </template>

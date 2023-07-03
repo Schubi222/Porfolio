@@ -8,6 +8,9 @@ $standard-grey-boarder: 1px solid $text-color;
 //MEDIA QUERIES
 $mobile:1024px;
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+
 
 
 a{
@@ -20,6 +23,7 @@ a{
   position: relative;
   display: grid;
   grid-template-rows: fit-content(500px) auto auto;
+  margin: 1rem;
   //flex-direction: column;
   //align-content: start;
 }
@@ -28,6 +32,7 @@ html{
   color: $text-color;
   overflow: auto;
   height: fit-content;
+  font-family: 'Roboto', sans-serif;
 }
 header{
   height: fit-content(200px);

@@ -3,17 +3,17 @@
 .Menu-bar{
   z-index: 10;
   padding: 1rem 0;
-  margin: 0 1rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   &__link{
     text-align: center;
     color: $text-color;
     font-size: clamp(1.5rem, 3vw, 3rem);
-    padding: clamp(1rem, 3vw, 2rem) clamp(3rem, 8vw, 12rem);
+    padding: clamp(1rem, 3vw, 2rem) clamp(3rem, 8vw, 11rem);
     border: $standard-grey-boarder;
     transition: .6s all ease-in-out;
     position: relative;
+    box-sizing: border-box;
     &:hover{
       border: 1px solid $call-to-action-color;
       color: $call-to-action-color;

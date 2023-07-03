@@ -2,6 +2,7 @@
 import MenuBar from '@/components/MenuBar.vue'
 import FooterBar from "@/components/FooterBar.vue";
 import { RouterView } from 'vue-router'
+
 </script>
 
 <template>
