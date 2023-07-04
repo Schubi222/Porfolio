@@ -11,7 +11,7 @@ import { RouterView } from 'vue-router'
   </header>
 
   <div class="Main-Content">
-  <RouterView />
+    <RouterView />
   </div>
 
   <div class="footer_div">

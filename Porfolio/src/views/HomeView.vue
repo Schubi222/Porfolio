@@ -1,6 +1,5 @@
 <template>
   <div class="Home-View">
-    <h1 class="test">HOME</h1>
     <PerfectTextField :text="about_text" :link="about_link" class="Home-View__text-field"/>
     <swiper
         :centered-slides="true"
