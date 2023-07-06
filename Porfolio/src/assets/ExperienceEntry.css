@@ -162,6 +162,9 @@ body {
   box-shadow: 0 0 0 2px #1c2c50;
   opacity: 1;
 }
+.CV-Wrapper__education:hover .Experience-Entry-Wrapper:hover .Experience-Entry-Wrapper__body-heading {
+  color: rgb(94, 234, 212);
+}
 
 .Experience-Entry-Wrapper {
   margin-top: 24px;
@@ -193,6 +196,7 @@ body {
 }
 .Experience-Entry-Wrapper__body-heading {
   color: white;
+  transition: all 0.2s ease-in-out;
 }
 .Experience-Entry-Wrapper__body-subheading {
   color: #d1d8e1;

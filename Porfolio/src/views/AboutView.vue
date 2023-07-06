@@ -29,12 +29,7 @@
         <ExperienceEntry v-for="entry in entry_objects" :key="entry.heading" :entry="entry"/>
         <ExperienceEntry v-for="entry in entry_objects" :key="entry.heading" :entry="entry"/>
       </div>
-      <div class="CV-Wrapper__jobs">
-        <p>
-
-        </p>
-        <a href="./src/assets/pdfs/Fabian_Schubert_Lebenslauf_eng.pdf" target="_blank">View full CV</a>
-      </div>
+      <a class="CV-Link" href="./src/assets/pdfs/Fabian_Schubert_Lebenslauf_eng.pdf" target="_blank" >View full CV</a>
     </div>
   </div>
 </template>
@@ -55,4 +50,9 @@ const entry_objects = ref([{
 
 <style scoped>
   @import "@/assets/about.css";
+  .CV-Wrapper:hover a{
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 </style>

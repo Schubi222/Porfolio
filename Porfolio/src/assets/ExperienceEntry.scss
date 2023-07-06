@@ -30,6 +30,7 @@
     }
     &-heading{
       color: $heading-color;
+      transition: all .2s ease-in-out;
     }
     &-subheading{
       color: $sub-heading-color;
