@@ -26,24 +26,7 @@
       </div>
       <div class="CV-Wrapper__projects"></div>
       <div class="CV-Wrapper__education">
-        <div class="Experience-Entry-Wrapper">
-          <div class="Experience-Entry-Wrapper__side-header">1998-PRESENT</div>
-          <div class="Experience-Entry-Wrapper__body">
-            <div class="Experience-Entry-Wrapper__body-heading">Living</div>
-            <div class="Experience-Entry-Wrapper__body-subheading">Human being</div>
-            <div class="Experience-Entry-Wrapper__body-text">
-              Improving oneself with the intention to create a better world for as many people as possible while living
-              fulfilled and also still having some fun.
-            </div>
-            <div class="Experience-Entry-Wrapper__body-tags">
-              <div class="Experience-Entry-Wrapper__body-tags-tag">Eating</div>
-              <div class="Experience-Entry-Wrapper__body-tags-tag">Drinking</div>
-              <div class="Experience-Entry-Wrapper__body-tags-tag">Public speaking</div>
-              <div class="Experience-Entry-Wrapper__body-tags-tag">NHL</div>
-              <div class="Experience-Entry-Wrapper__body-tags-tag">Ice Hockey</div>
-            </div>
-          </div>
-        </div>
+        <ExperienceEntry v-for="entry in entry_objects" :key="entry.heading" :entry="entry"/>
       </div>
       <div class="CV-Wrapper__jobs">
         <p>
@@ -56,7 +39,16 @@
 </template>
 
 <script setup>
-
+import ExperienceEntry from "@/components/ExperienceEntry.vue";
+import {ref} from "vue";
+const entry_objects = ref([{
+  timeline:'1998-PRESENT',
+  heading:'Living',
+  sub_heading:'Human being',
+  text:'Improving oneself with the intention to create a better world for as many people as possible while living' +
+      'fulfilled and also still having some fun.',
+  tags:['Eating','Drinking','Public speaking','NHL','Ice Hockey']
+}])
 </script>
 
 

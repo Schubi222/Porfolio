@@ -1,0 +1,48 @@
+@import "base";
+@import "about";
+.Experience-Entry-Wrapper{
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  //border: $standard-grey-boarder;
+  font-size: $text-size;
+  line-height: $line-height;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: .3s all ease-in-out;
+  padding: 10px;
+  border-radius: 2px;
+/*  & div{
+    border: $standard-grey-boarder;
+  }*/
+  &:hover{
+    background: lighten($primary-color, 5%);
+    box-shadow: 0 0 0 2px lighten($primary-color, 10%);
+  }
+  &__body{
+    margin-left: 10px;
+    padding: 5px;
+
+    &-subheading, &-text{
+      margin-bottom: 15px;
+    }
+    &-heading{
+      color: $heading-color;
+    }
+    &-subheading{
+      color: $sub-heading-color;
+    }
+    &-tags{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      &-tag{
+        border-radius: 9999px;
+        padding: 4px 12px;
+        color: $call-to-action-color;
+        background:transparentize($call-to-action-color, .8);
+        border: 1px solid $call-to-action-color !important;
+      }
+    }
+  }
+}

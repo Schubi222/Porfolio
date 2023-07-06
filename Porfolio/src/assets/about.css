@@ -99,32 +99,4 @@ body {
   text-align: center;
 }
 
-.Experience-Entry-Wrapper {
-  margin-top: 24px;
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  border: 1px solid rgb(148, 163, 184);
-  font-size: 24px;
-  line-height: 36px;
-  box-sizing: border-box;
-}
-.Experience-Entry-Wrapper div {
-  border: 1px solid rgb(148, 163, 184);
-}
-.Experience-Entry-Wrapper__body {
-  padding: 5px;
-}
-.Experience-Entry-Wrapper__body-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-.Experience-Entry-Wrapper__body-tags-tag {
-  border-radius: 9999px;
-  padding: 4px 12px;
-  color: rgb(94, 234, 212);
-  background: rgba(94, 234, 212, 0.3);
-  cursor: pointer;
-}
-
 /*# sourceMappingURL=about.css.map */
