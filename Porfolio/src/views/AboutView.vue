@@ -27,6 +27,7 @@
       <div class="CV-Wrapper__projects"></div>
       <div class="CV-Wrapper__education">
         <ExperienceEntry v-for="entry in entry_objects" :key="entry.heading" :entry="entry"/>
+        <ExperienceEntry v-for="entry in entry_objects" :key="entry.heading" :entry="entry"/>
       </div>
       <div class="CV-Wrapper__jobs">
         <p>

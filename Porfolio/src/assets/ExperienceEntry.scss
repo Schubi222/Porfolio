@@ -9,20 +9,22 @@
   line-height: $line-height;
   box-sizing: border-box;
   cursor: pointer;
-  transition: .3s all ease-in-out;
+  transition: .2s all ease-in-out;
   padding: 10px;
   border-radius: 2px;
 /*  & div{
     border: $standard-grey-boarder;
   }*/
-  &:hover{
+/*  &:hover{
     background: lighten($primary-color, 5%);
     box-shadow: 0 0 0 2px lighten($primary-color, 10%);
+  }*/
+
+  &__side-header{
+    color: transparentize($text-color, .3);
   }
   &__body{
     margin-left: 10px;
-    padding: 5px;
-
     &-subheading, &-text{
       margin-bottom: 15px;
     }
