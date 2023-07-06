@@ -14,7 +14,7 @@ $line-height: max(36px,4.6cqi);
     word-wrap: normal;
   }
   &__heading{
-    color: lighten($text-color, 50%);
+    color: $heading-color;
     line-height: $line-height;
     font-size: $text-size;
     font-weight: 600;

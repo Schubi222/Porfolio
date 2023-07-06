@@ -3,6 +3,8 @@ $main-color:red;
 $primary-color:rgb(15 23 42);
 $call-to-action-color:rgb(94 234 212);
 $text-color:rgb(148 163 184);
+$heading-color:lighten($text-color, 50%);
+$sub-heading-color:lighten($text-color, 20%);
 /* Yellow/ivory color
 $call-to-action-color:#D4A418;
 $text-color:#E6EFFF;
