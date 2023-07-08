@@ -64,7 +64,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid rgb(148, 163, 184);
 }
 .About-View-Wrapper__top-heading {
   color: white;
@@ -81,7 +80,7 @@ body {
 .About-View-Wrapper__top-flow-text {
   font-size: 24px;
   line-height: 36px;
-  text-align: center;
+  text-align: left;
 }
 
 .CV-Wrapper {
@@ -89,14 +88,22 @@ body {
   max-width: 700px;
   margin-top: 24px;
 }
-.CV-Wrapper__personal {
-  border: 1px solid rgb(148, 163, 184);
-}
 .CV-Wrapper__personal p {
-  border: 1px solid rgb(148, 163, 184);
   font-size: 24px;
   line-height: 36px;
-  text-align: center;
+  text-align: left;
 }
 
-/*# sourceMappingURL=about.css.map */
+.CV-Wrapper__education:hover .Experience-Entry-Wrapper {
+  opacity: 0.5;
+}
+.CV-Wrapper__education:hover .Experience-Entry-Wrapper:hover {
+  background: #16213d;
+  box-shadow: 0 0 0 2px #1c2c50;
+  opacity: 1;
+}
+.CV-Wrapper__education:hover .Experience-Entry-Wrapper:hover .Experience-Entry-Wrapper__body-heading {
+  color: rgb(94, 234, 212);
+}
+
+/*# sourceMappingURL=aboutview.css.map */

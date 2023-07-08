@@ -49,11 +49,12 @@ const entry_objects = ref([{
 
 
 <style scoped>
-  @import "@/assets/about.css";
+  @import "@/assets/aboutview.css";
   .CV-Wrapper{
     &>a{
       font-size: 30px !important;
       color: rgb(148 163 184);
+      margin: 3rem 1rem !important;
     }
     & > a:hover{
       background: -webkit-linear-gradient(180deg, rgba(94,234,212,1) 70%, rgba(148,163,184,1) 100%);
@@ -61,8 +62,7 @@ const entry_objects = ref([{
       -webkit-text-fill-color: transparent;
       text-fill-color: transparent;
       background-size: 500% auto;
-      animation: textShine 2s ease-in-out 1 forwards;
-
+      animation: textShine 1s ease-in-out 1 forwards;
     }
   }
   @keyframes textShine {

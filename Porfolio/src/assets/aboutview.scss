@@ -1,7 +1,7 @@
 @import "base";
 $text-size: 24px;
 $line-height: 36px;
-$text-placement: center;
+$text-placement: left;
 
 .About-View-Wrapper{
   display: flex;
@@ -13,7 +13,6 @@ $text-placement: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: $standard-grey-boarder;
   }
   &__top-heading{
     color: $heading-color;
@@ -30,7 +29,7 @@ $text-placement: center;
   &__top-flow-text{
     font-size: $text-size;
     line-height: $line-height;
-    text-align: $text-placement;
+    text-align: left;
   }
 }
 
@@ -39,12 +38,10 @@ $text-placement: center;
   max-width: 700px;
   margin-top: 24px;
   &__personal{
-    border: $standard-grey-boarder;
     & p{
-      border: $standard-grey-boarder;
       font-size: $text-size;
       line-height: $line-height;
-      text-align: $text-placement;
+      text-align: left;
     }
   }
 }
