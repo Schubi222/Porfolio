@@ -10,6 +10,7 @@
 <script setup>
 import ProjectCard from '@/components/ProjectCard.vue'
 import PerfectTextField from '@/components/PerfectTextField.vue'
+import projects_file from '@/assets/data/projects.json'
 import {ref} from "vue";
 
 const heading_welcome = 'Willkommen in meinem Porfolio!'
@@ -17,14 +18,8 @@ const text_welcome = 'Ich bin ein ambitionierter Webentwickler aus Graz.' +
     ' Stehts auf der nach neuen Herausforderungen versuche ich mir immer neue Fähigkeiten anzueignen.' +
     ' Über die Zeit hat sich so mein kleines Portfolio angesammelt.'
 
-const project_object = {
-  name:'Calculator',
-  tags: ['Beginner', 'Vue.js'],
-  img: 'Calculator.png',
-  link: 'projects/calculator',
-  width: 250
-}
-const projects = ref([project_object])
+
+const projects = ref(projects_file.projects)
 
 </script>
 

@@ -27,7 +27,6 @@
       <div class="CV-Wrapper__projects"></div>
       <div class="CV-Wrapper__education">
         <ExperienceEntry v-for="entry in entry_objects" :key="entry.heading" :entry="entry"/>
-        <ExperienceEntry v-for="entry in entry_objects" :key="entry.heading" :entry="entry"/>
       </div>
       <a class="CV-Link" href="./src/assets/pdfs/Fabian_Schubert_Lebenslauf_eng.pdf" target="_blank" >View full CV</a>
     </div>
@@ -36,15 +35,11 @@
 
 <script setup>
 import ExperienceEntry from "@/components/ExperienceEntry.vue";
+import json from "@/assets/data/cv.json"
 import {ref} from "vue";
-const entry_objects = ref([{
-  timeline:'1998-PRESENT',
-  heading:'Living',
-  sub_heading:'Human being',
-  text:'Improving oneself with the intention to create a better world for as many people as possible while living' +
-      'fulfilled and also still having some fun.',
-  tags:['Eating','Drinking','Public speaking','NHL','Ice Hockey']
-}])
+
+const entry_objects = ref(json.entries)
+console.log(json.entries)
 </script>
 
 

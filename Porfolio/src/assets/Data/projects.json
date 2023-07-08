@@ -1,0 +1,24 @@
+{
+  "projects": [
+    {
+      "name": "Calculator",
+      "tags": [
+        "Beginner",
+        "Vue.js"
+      ],
+      "img": "Calculator.png",
+      "link": "projects/calculator",
+      "width": 250
+    },
+    {
+      "name": "AAAAAAAA",
+      "tags": [
+        "Beginner",
+        "Vue.js"
+      ],
+      "img": "Calculator.png",
+      "link": "projects/calculator",
+      "width": 250
+    }
+  ]
+}
