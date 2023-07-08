@@ -35,7 +35,7 @@
 
 <script setup>
 import ExperienceEntry from "@/components/ExperienceEntry.vue";
-import json from "@/assets/data/cv.json"
+import json from "@/assets/Data/cv.json"
 import {ref} from "vue";
 
 const entry_objects = ref(json.entries)

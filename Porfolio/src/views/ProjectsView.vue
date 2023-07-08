@@ -10,7 +10,7 @@
 <script setup>
 import ProjectCard from '@/components/ProjectCard.vue'
 import PerfectTextField from '@/components/PerfectTextField.vue'
-import projects_file from '@/assets/data/projects.json'
+import projects_file from '@/assets/Data/projects.json'
 import {ref} from "vue";
 
 const heading_welcome = 'Willkommen in meinem Porfolio!'
@@ -31,7 +31,7 @@ const projects = ref(projects_file.projects)
   width: 100%;
   height: 250px;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr;
   overflow: hidden;
 }
 /*.Welcome-Text-Field{
