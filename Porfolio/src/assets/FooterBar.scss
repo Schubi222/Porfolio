@@ -10,10 +10,6 @@
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
-/*  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;*/
   border-top: 1px solid;
 
   border-image:
@@ -36,9 +32,6 @@
     color: $text-color;
     cursor: pointer;
     transition: color .3s ease-in-out;
-    &:hover{
-      color: $call-to-action-color;
-    }
   }
 
 }

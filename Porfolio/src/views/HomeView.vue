@@ -9,10 +9,18 @@
         :scrollbar="true"
         :modules="modules"
         class="mySwiper">
-      <swiper-slide class="swiper_custom_slide"><img src="@/assets/imgs/Calculator.png" alt=""></swiper-slide>
-      <swiper-slide class="swiper_custom_slide">Slide 2</swiper-slide>
-      <swiper-slide class="swiper_custom_slide">Slide 3</swiper-slide>
-      <swiper-slide class="swiper_custom_slide">Slide 4</swiper-slide>
+      <swiper-slide class="swiper_custom_slide" @click="$router.push(`/projects/${projects[0].name}`)" >
+        <img :src="'./src/assets/imgs/'+projects[0].name+'.png'" alt="">
+      </swiper-slide>
+      <swiper-slide class="swiper_custom_slide" @click="$router.push(`/projects/${projects[1].name}`)" >
+        <img :src="'./src/assets/imgs/'+projects[1].name+'.png'" alt="">
+      </swiper-slide>
+      <swiper-slide class="swiper_custom_slide" @click="$router.push(`/projects/${projects[2].name}`)" >
+        <img :src="'./src/assets/imgs/'+projects[2].name+'.png'" alt="">
+      </swiper-slide>
+      <swiper-slide class="swiper_custom_slide" @click="$router.push(`/projects/${projects[3].name}`)" >
+        <img :src="'./src/assets/imgs/'+projects[3].name+'.png'" alt="">
+      </swiper-slide>
     </swiper>
     <RouterLink class="btn big_btn" to="/projects">All Projects</RouterLink>
     <!--  TODO: GITHUB-->
@@ -29,6 +37,12 @@
   // Import Swiper styles
   import 'swiper/css';
   import 'swiper/css/scrollbar';
+
+  import project_file from "@/assets/Data/swiper_projects.json"
+
+  import {ref} from "vue";
+
+  const projects = ref(project_file.projects)
 
   const about_text = "There is something you could do, you would do, that would make a difference.\n\n ~Jordan B. Peterson"
   const about_link = {to: 'about', text:'Want to read more about me?'}

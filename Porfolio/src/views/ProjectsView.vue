@@ -2,7 +2,9 @@
   <div class="Project-View-Wrapper">
     <div class="Project-View-Wrapper__first-row Project-View-Wrapper__rom">
       <PerfectTextField class="Welcome-Text-Field" :heading="heading_welcome" :text="text_welcome"/>
-      <ProjectCard v-for="project in projects" :key="project.name" :project="project"/>
+      <RouterLink :to="'/projects/'+project.name" v-for="project in projects" :key="project.name">
+        <ProjectCard :project="project"/>
+      </RouterLink>
     </div>
   </div>
 </template>
