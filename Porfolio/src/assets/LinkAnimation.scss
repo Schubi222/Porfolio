@@ -1,8 +1,8 @@
-@import "base";
+@use "variables";
 
 .animated-link{
   &:hover{
-    background: -webkit-linear-gradient(180deg, $call-to-action-color 70%, rgba(148,163,184,1) 100%);
+    background: -webkit-linear-gradient(180deg, variables.$call-to-action-color 70%, rgba(148,163,184,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;

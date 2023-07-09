@@ -1,4 +1,4 @@
-@import "base";
+@use "variables";
 .Home-View{
   display: flex;
   justify-content: center;
@@ -17,7 +17,7 @@
 
 }
 
-@media (max-width: $mobile) {
+@media (max-width: variables.$mobile) {
   .Home-View{
     &__text-field{
       width: 95%;

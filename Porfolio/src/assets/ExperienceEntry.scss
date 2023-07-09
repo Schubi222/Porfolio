@@ -1,4 +1,4 @@
-@import "base";
+@use "variables";
 $text-size: 24px;
 $line-height: 36px;
 $text-placement: left;
@@ -16,7 +16,7 @@ $text-placement: left;
   border-radius: 2px;
 
   &__side-header{
-    color: transparentize($text-color, .3);
+    color: transparentize(variables.$text-color, .3);
   }
   &__body{
     margin-left: 10px;
@@ -24,11 +24,11 @@ $text-placement: left;
       margin-bottom: 15px;
     }
     &-heading{
-      color: $heading-color;
+      color: variables.$heading-color;
       transition: all .2s ease-in-out;
     }
     &-subheading{
-      color: $sub-heading-color;
+      color: variables.$sub-heading-color;
     }
     &-tags{
       display: flex;
@@ -37,9 +37,9 @@ $text-placement: left;
       &-tag{
         border-radius: 9999px;
         padding: 4px 12px;
-        color: $call-to-action-color;
-        background:transparentize($call-to-action-color, .8);
-        border: 1px solid $call-to-action-color !important;
+        color: variables.$call-to-action-color;
+        background:transparentize(variables.$call-to-action-color, .8);
+        border: 1px solid variables.$call-to-action-color !important;
       }
     }
   }

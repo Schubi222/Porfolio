@@ -1,18 +1,18 @@
-@import "base";
+@use "variables";
 .Project-Preview-Wrapper{
   &__back-btn{
     position: absolute;
     cursor: pointer;
     padding: 5px;
-    font-size: $basic-font-size;
-    color: $text-color;
+    font-size: variables.$basic-font-size;
+    color: variables.$text-color;
   }
   &__content{
     position: relative;
     display: flex;
     flex-direction: column;
-    font-size: $basic-font-size;
-    line-height: $basic-line-hight;
+    font-size: variables.$basic-font-size;
+    line-height: variables.$basic-line-hight;
     gap: 1rem;
     margin: max(10%,100px) 0 0 2rem;
     border-image:

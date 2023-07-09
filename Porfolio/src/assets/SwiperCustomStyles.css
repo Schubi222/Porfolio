@@ -1,9 +1,8 @@
-/*THIS STYLE IS GLOBAL*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 /* Yellow/ivory color
 $call-to-action-color:#D4A418;
 $text-color:#E6EFFF;
 */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 a {
   text-decoration: none;
 }

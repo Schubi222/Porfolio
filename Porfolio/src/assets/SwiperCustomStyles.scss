@@ -1,7 +1,7 @@
-/*THIS STYLE IS GLOBAL*/
-@import "base";
+
+@use "base";
 .swiper-scrollbar{
-  background: transparentize($call-to-action-color,0.6) !important;
+  background: transparentize(rgba(94,234,212,1),0.6) !important;
   width: 60% !important;
   position: relative !important;
   margin: 2rem auto;
@@ -9,7 +9,7 @@
 
 }
 .swiper-scrollbar-drag{
-  background:$call-to-action-color !important;
+  background: rgba(94,234,212,1) !important;
   width: 80% !important;
   background: radial-gradient(circle, rgba(94,234,212,1) 96%, rgba(0,212,255,0) 100%) !important;
   left: -4% !important;

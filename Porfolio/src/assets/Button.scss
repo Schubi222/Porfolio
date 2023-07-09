@@ -1,14 +1,14 @@
-@import "base";
+@use "variables";
 .btn{
-  border: 1px solid $call-to-action-color;
-  color: $call-to-action-color;
+  border: 1px solid variables.$call-to-action-color;
+  color: variables.$call-to-action-color;
   cursor: pointer;
   transition: all .2s ease-in-out;
   padding: 7px 10px;
   font-size: 1.2rem;
   line-height: 1.65rem;
   border-radius: 9999px;
-  box-shadow: 0 1px 1px $call-to-action-color;
+  box-shadow: 0 1px 1px variables.$call-to-action-color;
   position: relative;
   overflow: hidden;
   &:before{
@@ -22,7 +22,7 @@
     background: linear-gradient(
                     to right,
                     transparent 10%,
-                    $call-to-action-color 190%,
+                    variables.$call-to-action-color 190%,
     );
     transition: all .4s ease;
   }

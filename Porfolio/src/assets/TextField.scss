@@ -1,4 +1,4 @@
-@import "base";
+@use "variables";
 $text-size: max(24px,3.5cqi);
 $line-height: max(36px,4.6cqi);
 .Text-Field-Wrapper{
@@ -14,18 +14,18 @@ $line-height: max(36px,4.6cqi);
     word-wrap: normal;
   }
   &__heading{
-    color: $heading-color;
+    color: variables.$heading-color;
     line-height: $line-height;
     font-size: $text-size;
     font-weight: 600;
   }
   &__link{
     cursor: pointer;
-    color: $call-to-action-color;
+    color: variables.$call-to-action-color;
     line-height: $line-height;
     transition: color .3s ease-in-out;
     &:hover{
-      color: darken($call-to-action-color, 20%);
+      color: darken(variables.$call-to-action-color, 20%);
     }
   }
 }

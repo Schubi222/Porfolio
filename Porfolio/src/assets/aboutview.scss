@@ -1,4 +1,4 @@
-@import "base";
+@use "variables";
 $text-size: 24px;
 $line-height: 36px;
 $text-placement: left;
@@ -15,13 +15,13 @@ $text-placement: left;
     align-items: center;
   }
   &__top-heading{
-    color: $heading-color;
+    color: variables.$heading-color;
     font-size: 32px;
     line-height: 38px;
     margin: 1rem 0;
   }
   &__title{
-    color: $sub-heading-color;
+    color: variables.$sub-heading-color;
     font-size: $text-size;
     line-height: $line-height;
     margin: .5rem 0;
@@ -51,8 +51,8 @@ $text-placement: left;
       .Experience-Entry-Wrapper{
         opacity: .5;
         &:hover{
-          background: lighten($primary-color, 5%);
-          box-shadow: 0 0 0 2px lighten($primary-color, 10%);
+          background: lighten(variables.$primary-color, 5%);
+          box-shadow: 0 0 0 2px lighten(variables.$primary-color, 10%);
           opacity: 1;
           .Experience-Entry-Wrapper__body-heading{
             color: #5EEAD4FF !important;
