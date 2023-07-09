@@ -7,7 +7,6 @@ $text-placement: left;
   margin-top: 24px;
   display: grid;
   grid-template-columns: 1fr 3fr;
-  //border: $standard-grey-boarder;
   font-size: $text-size;
   line-height: $line-height;
   box-sizing: border-box;
@@ -15,13 +14,6 @@ $text-placement: left;
   transition: .2s all ease-in-out;
   padding: 10px;
   border-radius: 2px;
-/*  & div{
-    border: $standard-grey-boarder;
-  }*/
-/*  &:hover{
-    background: lighten($primary-color, 5%);
-    box-shadow: 0 0 0 2px lighten($primary-color, 10%);
-  }*/
 
   &__side-header{
     color: transparentize($text-color, .3);

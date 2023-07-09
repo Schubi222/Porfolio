@@ -88,22 +88,27 @@ body {
   max-width: 700px;
   margin-top: 24px;
 }
+.CV-Wrapper__personal {
+  margin-bottom: 48px;
+}
 .CV-Wrapper__personal p {
   font-size: 24px;
   line-height: 36px;
   text-align: left;
 }
-
-.CV-Wrapper__education:hover .Experience-Entry-Wrapper {
+.CV-Wrapper__experience {
+  margin-bottom: 3rem;
+}
+.CV-Wrapper__experience:hover .Experience-Entry-Wrapper {
   opacity: 0.5;
 }
-.CV-Wrapper__education:hover .Experience-Entry-Wrapper:hover {
+.CV-Wrapper__experience:hover .Experience-Entry-Wrapper:hover {
   background: #16213d;
   box-shadow: 0 0 0 2px #1c2c50;
   opacity: 1;
 }
-.CV-Wrapper__education:hover .Experience-Entry-Wrapper:hover .Experience-Entry-Wrapper__body-heading {
-  color: rgb(94, 234, 212);
+.CV-Wrapper__experience:hover .Experience-Entry-Wrapper:hover .Experience-Entry-Wrapper__body-heading {
+  color: #5eead4 !important;
 }
 
 /*# sourceMappingURL=aboutview.css.map */

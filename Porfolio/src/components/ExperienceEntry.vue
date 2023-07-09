@@ -27,4 +27,6 @@
 
 <style scoped>
 @import "@/assets/ExperienceEntry.css";
+@import "@/assets/aboutview.css";
+
 </style>

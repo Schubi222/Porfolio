@@ -24,11 +24,11 @@
           <span id="Read-Animation">reading books</span> or <span id="Socialise-Animation">socialising</span>.
         </p>
       </div>
-      <div class="CV-Wrapper__projects"></div>
-      <div class="CV-Wrapper__education">
+      <div class="CV-Wrapper__experience">
         <ExperienceEntry v-for="entry in entry_objects" :key="entry.heading" :entry="entry"/>
       </div>
       <a class="CV-Link" href="./src/assets/pdfs/Fabian_Schubert_Lebenslauf_eng.pdf" target="_blank" >View full CV</a>
+      <div class="CV-Wrapper__projects"></div>
     </div>
   </div>
 </template>

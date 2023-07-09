@@ -38,24 +38,27 @@ $text-placement: left;
   max-width: 700px;
   margin-top: 24px;
   &__personal{
+    margin-bottom: 48px;
     & p{
       font-size: $text-size;
       line-height: $line-height;
       text-align: left;
     }
   }
-}
-.CV-Wrapper__education:hover{
-  .Experience-Entry-Wrapper{
-    opacity: .5;
-
-  }
-  .Experience-Entry-Wrapper:hover{
-    background: lighten($primary-color, 5%);
-    box-shadow: 0 0 0 2px lighten($primary-color, 10%);
-    opacity: 1;
-    .Experience-Entry-Wrapper__body-heading{
-      color: $call-to-action-color;
+  &__experience{
+    margin-bottom: 3rem;
+    &:hover{
+      .Experience-Entry-Wrapper{
+        opacity: .5;
+        &:hover{
+          background: lighten($primary-color, 5%);
+          box-shadow: 0 0 0 2px lighten($primary-color, 10%);
+          opacity: 1;
+          .Experience-Entry-Wrapper__body-heading{
+            color: #5EEAD4FF !important;
+          }
+        }
+      }
     }
   }
 }
