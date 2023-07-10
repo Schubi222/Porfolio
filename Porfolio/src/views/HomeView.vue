@@ -5,21 +5,22 @@
         :centered-slides="true"
         :slides-per-view="4"
         :space-between="30"
+        :speed="600"
         :parallax="true"
         :scrollbar="true"
         :modules="modules"
         class="mySwiper">
       <swiper-slide class="swiper_custom_slide" @click="$router.push(`/projects/${projects[0].name}`)" >
-        <img :src="'./src/assets/imgs/'+projects[0].name+'.png'" alt="">
+        <img :src="'./src/assets/imgs/'+projects[0].name+'.png'" alt="" data-swiper-parallax="-10%" data-swiper-parallax-scale=".95">
       </swiper-slide>
-      <swiper-slide class="swiper_custom_slide" @click="$router.push(`/projects/${projects[1].name}`)" >
-        <img :src="'./src/assets/imgs/'+projects[1].name+'.png'" alt="">
+      <swiper-slide class="swiper_custom_slide" @click="$router.push(`/projects/${projects[1].name}`)">
+        <img :src="'./src/assets/imgs/'+projects[1].name+'.png'" alt="" data-swiper-parallax="-10%" data-swiper-parallax-scale=".95">
       </swiper-slide>
       <swiper-slide class="swiper_custom_slide" @click="$router.push(`/projects/${projects[2].name}`)" >
-        <img :src="'./src/assets/imgs/'+projects[2].name+'.png'" alt="">
+        <img :src="'./src/assets/imgs/'+projects[2].name+'.png'" alt="" data-swiper-parallax="-10%" data-swiper-parallax-scale=".95">
       </swiper-slide>
       <swiper-slide class="swiper_custom_slide" @click="$router.push(`/projects/${projects[3].name}`)" >
-        <img :src="'./src/assets/imgs/'+projects[3].name+'.png'" alt="">
+        <img :src="'./src/assets/imgs/'+projects[3].name+'.png'" alt="" data-swiper-parallax="-10%" data-swiper-parallax-scale=".95">
       </swiper-slide>
     </swiper>
     <RouterLink class="btn big_btn" to="/projects">All Projects</RouterLink>

@@ -30,4 +30,7 @@
   padding: 10px;
   box-sizing: border-box;
   cursor: pointer;
+  & img{
+    border-radius: 15px;
+  }
 }

@@ -85,5 +85,8 @@ body {
   box-sizing: border-box;
   cursor: pointer;
 }
+.swiper_custom_slide img {
+  border-radius: 15px;
+}
 
 /*# sourceMappingURL=SwiperCustomStyles.css.map */
