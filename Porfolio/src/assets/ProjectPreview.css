@@ -21,8 +21,15 @@ $text-color:#E6EFFF;
   padding: 20px;
   border-bottom: 1px solid;
 }
+.Project-Preview-Wrapper__content-name {
+  color: white;
+}
+.Project-Preview-Wrapper__content-date {
+  color: #d1d8e1;
+}
 .Project-Preview-Wrapper__content-description {
   max-width: 40ch;
+  line-height: 36px;
 }
 .Project-Preview-Wrapper__content-img {
   width: 100%;
