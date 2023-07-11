@@ -24,7 +24,13 @@
       </swiper-slide>
     </swiper>
     <RouterLink class="btn big_btn" to="/projects">All Projects</RouterLink>
-    <!--  TODO: GITHUB-->
+
+    <div class="Github-Wrapper">
+      <h1>My Github Statistics</h1>
+      <p><img src="https://github-readme-streak-stats.herokuapp.com?user=schubi222&theme=dark" alt="schubi222" /></p>
+      <p><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=schubi222&langs_count=5&theme=dark" alt="schubi222" /></p>
+    </div>
+
     <ContactForm/>
   </div>
 </template>
@@ -56,10 +62,4 @@
   @import "@/assets/HomeView.css";
   @import "@/assets/SwiperCustomStyles.css";
 
-
-/*  .Home-View{
-    height: fit-content;
-    width: 100%;
-    align-self: center;
-  }*/
 </style>

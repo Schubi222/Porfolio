@@ -13,8 +13,26 @@
     width: clamp(500px, 270px + 30cqi,750px);
     padding: 2rem 0;
     height: fit-content;
+    margin-top: variables.$home-component-separation;
   }
 
+}
+
+
+.mySwiper{
+  margin-top: variables.$home-component-separation;
+}
+.Github-Wrapper{
+  margin-top: variables.$home-component-separation;
+  container-type: inline-size;
+  width: 100%;
+
+  & img{
+    max-width: 100cqw;
+  }
+}
+.Contact-Form-Wrapper{
+  margin-top: variables.$home-component-separation;
 }
 
 @media (max-width: variables.$mobile) {

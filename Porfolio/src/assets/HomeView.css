@@ -17,6 +17,24 @@ $text-color:#E6EFFF;
   width: clamp(500px, 270px + 30cqi, 750px);
   padding: 2rem 0;
   height: fit-content;
+  margin-top: 5rem;
+}
+
+.mySwiper {
+  margin-top: 5rem;
+}
+
+.Github-Wrapper {
+  margin-top: 5rem;
+  container-type: inline-size;
+  width: 100%;
+}
+.Github-Wrapper img {
+  max-width: 100cqw;
+}
+
+.Contact-Form-Wrapper {
+  margin-top: 5rem;
 }
 
 @media (max-width: 1024px) {

@@ -17,14 +17,12 @@
 }
 
 .mySwiper{
-  margin: 0 20rem;
   width: 80%;
   height: fit-content !important;
   padding: 2vh 5rem;
   overflow: hidden;
 }
 .swiper_custom_slide{
-  /*border: 1px solid white;*/
   height: clamp(200px,calc(100px + 20vw) ,400px);
   overflow: hidden;
   border-radius: 10px;

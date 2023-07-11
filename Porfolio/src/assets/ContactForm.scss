@@ -2,7 +2,6 @@
 $background:transparentize(lighten(variables.$primary-color, 20%),0.6);
 $border:1px solid transparentize(lighten(variables.$primary-color, 30%),.3);
 .Contact-Form-Wrapper{
-  margin: 5rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

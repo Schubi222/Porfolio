@@ -3,7 +3,6 @@ $call-to-action-color:#D4A418;
 $text-color:#E6EFFF;
 */
 .Contact-Form-Wrapper {
-  margin: 5rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
