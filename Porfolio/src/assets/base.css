@@ -16,5 +16,7 @@ body {
   width: 100vw;
   overflow: hidden;
 }
-
+#app{
+  justify-items: center;
+}
 /*# sourceMappingURL=base.css.map */

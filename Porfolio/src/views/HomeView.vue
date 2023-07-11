@@ -25,12 +25,13 @@
     </swiper>
     <RouterLink class="btn big_btn" to="/projects">All Projects</RouterLink>
     <!--  TODO: GITHUB-->
-    <!--  TODO: Contact-->
+    <ContactForm/>
   </div>
 </template>
 
 <script setup>
   import PerfectTextField from "@/components/PerfectTextField.vue";
+  import ContactForm from "@/components/ContactForm.vue";
   // Import Swiper Vue.js components
   import { Swiper, SwiperSlide } from 'swiper/vue';
   import {Scrollbar, Parallax} from "swiper";
