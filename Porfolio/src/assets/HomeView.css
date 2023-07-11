@@ -29,8 +29,26 @@ $text-color:#E6EFFF;
   container-type: inline-size;
   width: 100%;
 }
+.Github-Wrapper__link {
+  font-size: 24px;
+  color: rgb(148, 163, 184);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+  width: fit-content;
+}
+.Github-Wrapper__link-icon {
+  width: 2rem;
+  height: 2rem;
+  padding-left: 5px;
+}
 .Github-Wrapper img {
-  max-width: 100cqw;
+  max-width: 100cqw !important;
+}
+.Github-Wrapper .Github-Wrapper__second {
+  width: 495px;
 }
 
 .Contact-Form-Wrapper {

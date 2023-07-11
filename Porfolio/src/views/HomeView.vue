@@ -3,7 +3,8 @@
     <PerfectTextField :text="about_text" :link="about_link" class="Home-View__text-field"/>
     <swiper
         :centered-slides="true"
-        :slides-per-view="4"
+        :initial-slide="0"
+        :slides-per-view="5"
         :space-between="30"
         :speed="600"
         :parallax="true"
@@ -27,8 +28,12 @@
 
     <div class="Github-Wrapper">
       <h1>My Github Statistics</h1>
+      <a class="Github-Wrapper__link animated-link" href="https://github.com/Schubi222">
+        <div>Want to access my repo?</div>
+        <img class="Github-Wrapper__link-icon" src="@/assets/imgs/github_logo.png" alt="github logo"/>
+      </a>
       <p><img src="https://github-readme-streak-stats.herokuapp.com?user=schubi222&theme=dark" alt="schubi222" /></p>
-      <p><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=schubi222&langs_count=5&theme=dark" alt="schubi222" /></p>
+      <p><img class="Github-Wrapper__second" src="https://github-readme-stats.vercel.app/api/top-langs/?username=schubi222&langs_count=5&theme=dark" alt="schubi222" /></p>
     </div>
 
     <ContactForm/>

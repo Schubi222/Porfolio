@@ -26,9 +26,27 @@
   margin-top: variables.$home-component-separation;
   container-type: inline-size;
   width: 100%;
+  &__link{
+    font-size: variables.$basic-font-size;
+    color: variables.$text-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+    width: fit-content;
+    &-icon{
+      width: 2rem;
+      height: 2rem;
+      padding-left: 5px;
+    }
+  }
 
   & img{
-    max-width: 100cqw;
+    max-width: 100cqw !important;
+  }
+  .Github-Wrapper__second{
+    width: 495px;
   }
 }
 .Contact-Form-Wrapper{
