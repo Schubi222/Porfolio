@@ -47,6 +47,7 @@ $border:1px solid transparentize(lighten(variables.$primary-color, 30%),.3);
       grid-area: Submit;
       background: none;
       box-shadow: none;
+      margin-bottom: 8px;
     }
     &-input{
       background: $background;

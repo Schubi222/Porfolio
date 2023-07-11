@@ -47,6 +47,7 @@ $text-color:#E6EFFF;
   grid-area: Submit;
   background: none;
   box-shadow: none;
+  margin-bottom: 8px;
 }
 .Contact-Form-Wrapper__form-input {
   background: rgba(42, 64, 117, 0.4);
