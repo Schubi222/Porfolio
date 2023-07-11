@@ -55,6 +55,7 @@
   @import "@/assets/HomeView.css";
   @import "@/assets/SwiperCustomStyles.css";
 
+
 /*  .Home-View{
     height: fit-content;
     width: 100%;
