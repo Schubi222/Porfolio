@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import ProjectView from '@/views/ProjectsView.vue'
 import AboutView from "@/views/AboutView.vue";
 import ProjectDetailsView from "@/views/ProjectDetailsView.vue";
+import ImprintView from "@/views/ImprintView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -18,14 +19,20 @@ const router = createRouter({
       component: ProjectView
     },
     {
+      path: '/projects/:name',
+      name: 'projects-:name',
+      component: ProjectDetailsView
+    },
+    {
       path: '/about',
       name: 'about',
       component: AboutView
     },
+
     {
-      path: '/projects/:name',
-      name: 'projects-:name',
-      component: ProjectDetailsView
+      path: '/imprint',
+      name: 'imprint',
+      component: ImprintView
     },
   ]
 })

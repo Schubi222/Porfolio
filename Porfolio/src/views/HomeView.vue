@@ -36,7 +36,7 @@
       <p><img class="Github-Wrapper__second" src="https://github-readme-stats.vercel.app/api/top-langs/?username=schubi222&langs_count=5&theme=dark" alt="schubi222" /></p>
     </div>
 
-    <ContactForm/>
+    <ContactForm id="contact"/>
   </div>
 </template>
 
@@ -53,13 +53,25 @@
 
   import project_file from "@/assets/Data/swiper_projects.json"
 
-  import {ref} from "vue";
+  import {onMounted, ref} from "vue";
 
   const projects = ref(project_file.projects)
 
   const about_text = "There is something you could do, you would do, that would make a difference.\n\n ~Jordan B. Peterson"
   const about_link = {to: 'about', text:'Want to read more about me?'}
   const modules = [Scrollbar, Parallax]
+  const supported_jumps = ['contact']
+
+  onMounted(() =>{
+    const jump_to = window.location.href.split("/#")?.at(1);
+    if (jump_to && supported_jumps.includes(jump_to.toString())){
+      window.scrollTo({
+        top: document.getElementById(jump_to.toString()).offsetTop,
+        left: 0,
+        behavior: "smooth",
+      });
+    }
+  })
 
 </script>
 

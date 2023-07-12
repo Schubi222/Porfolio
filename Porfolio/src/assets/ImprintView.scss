@@ -1,0 +1,20 @@
+@use "variables";
+.Imprint-Wrapper{
+  font-size: variables.$basic-font-size;
+  line-height: variables.$basic-line-hight;
+
+  & > h1{
+    color: variables.$heading-color;
+  }
+  & > h2{
+    color: variables.$sub-heading-color;
+  }
+  &__info{
+    max-width: 600px;
+    &-link{
+      color: variables.$call-to-action-color;
+      cursor: pointer;
+    }
+  }
+
+}
