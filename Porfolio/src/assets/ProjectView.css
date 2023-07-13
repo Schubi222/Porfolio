@@ -1,0 +1,43 @@
+/* Yellow/ivory color
+$call-to-action-color:#D4A418;
+$text-color:#E6EFFF;
+*/
+.Project-View-Wrapper {
+  display: flex;
+}
+
+.Project-View-Wrapper__first-row {
+  width: 100%;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.Project-View-Wrapper__project-card {
+  overflow: hidden;
+  width: 25%;
+  max-height: 400px;
+}
+
+.Welcome-Text-Field {
+  width: 50%;
+  max-width: 800px;
+  max-height: 400px;
+}
+
+@media (max-width: 1024px) {
+  .Project-View-Wrapper__project-card {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .Project-View-Wrapper__project-card {
+    width: 100%;
+  }
+  .Welcome-Text-Field {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=ProjectView.css.map */

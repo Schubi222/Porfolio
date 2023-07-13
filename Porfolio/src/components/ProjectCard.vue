@@ -1,18 +1,18 @@
 <template>
-<RouterLink :to="router_link" class="Project-Card-Link">
-  <div class="Project-Card">
-    <img :src="'./src/assets/imgs/'+img_src" alt="Image representing the project" class="Project-Card__img">
-    <div class="Hover-Wrapper">
-      <div class="Hover-Wrapper__heading">{{heading}}</div>
-      <div class="Hover-Wrapper__text" v-for="tag in tags" :key="tag">{{tag}}</div>
+  <RouterLink :to="router_link" class="Project-Card-Link">
+    <div class="Project-Card">
+      <img :src="'./src/assets/imgs/'+img_src" alt="Image representing the project" class="Project-Card__img">
+      <div class="Hover-Wrapper">
+        <div class="Hover-Wrapper__heading">{{heading}}</div>
+        <div class="Hover-Wrapper__text" v-for="tag in tags" :key="tag">{{tag}}</div>
+      </div>
     </div>
-  </div>
-</RouterLink>
+  </RouterLink>
 </template>
 
 <script setup>
   import {RouterLink} from "vue-router";
-  import {computed, ref} from "vue";
+  import {ref} from "vue";
 
   const props = defineProps(['project'])
 
@@ -20,11 +20,11 @@
   const heading = ref(props.project.name)
   const img_src = ref(props.project.img)
   const router_link = ref(props.project.link)
-  const width = ref(props.project.width);
+  // const width = ref(props.project.width);
 
-  const width_with_px = computed(()=>{
+/*  const width_with_px = computed(()=>{
     return width.value+'px'
-  })
+  })*/
 
 
 
@@ -32,7 +32,7 @@
 
 <style scoped>
 @import '../assets/ProjectCard.css';
-.Project-Card{
+/*.Project-Card{
   width: v-bind(width_with_px);
-}
+}*/
 </style>

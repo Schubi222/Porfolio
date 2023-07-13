@@ -2,8 +2,8 @@
   <div class="Project-View-Wrapper">
     <div class="Project-View-Wrapper__first-row Project-View-Wrapper__rom">
       <PerfectTextField class="Welcome-Text-Field" :heading="heading_welcome" :text="text_welcome"/>
-      <RouterLink :to="'/projects/'+project.name" v-for="project in projects" :key="project.name">
-        <ProjectCard :project="project"/>
+      <RouterLink class="Project-View-Wrapper__project-card" :to="'/projects/'+project.name" v-for="project in projects" :key="project.name">
+        <ProjectCard :project="project" />
       </RouterLink>
     </div>
   </div>
@@ -26,18 +26,5 @@ const projects = ref(projects_file.projects)
 </script>
 
 <style scoped>
-.Project-View-Wrapper{
-  display: flex;
-}
-.Project-View-Wrapper__first-row{
-  width: 100%;
-  height: 250px;
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  overflow: hidden;
-}
-/*.Welcome-Text-Field{
-  width: 500px;
-  height: 250px;
-}*/
+@import "@/assets/ProjectView.css";
 </style>
