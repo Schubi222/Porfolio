@@ -35,7 +35,7 @@ const side_panel = ref()
 
 const toggle_mobile_menu = () =>{
   hamburger_div.value.classList.toggle('is_open')
-  side_panel.value.classList.toggle('is_open')
+  side_panel.value.classList.toggle('menu_is_open')
 }
 
 
