@@ -5,49 +5,19 @@
   padding: 1rem 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  &__link{
-    text-align: center;
-    color: variables.$text-color;
-    font-size: clamp(1.5rem, 3vw, 3rem);
-    padding: clamp(1rem, 3vw, 2rem) clamp(3rem, 8vw, 11rem);
-    border: variables.$standard-grey-boarder;
-    transition: .6s all ease-in-out;
-    position: relative;
-    box-sizing: border-box;
-    &:hover{
-      border: 1px solid variables.$call-to-action-color;
-      color: variables.$call-to-action-color;
-    }
-    &:hover:before{
-      transition: width .6s ease;
-      width: 100%;
-    }
-    &:before{
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 0;
-      height: 100%;
-      background: linear-gradient(
-                  to right,
-                  transparent 10%,
-                      variables.$call-to-action-color 190%,
-      );
-    }
-  }
+
 
 }
 .Menu-bar-mobile{
   z-index: 10;
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
   cursor: pointer;
-  height: 100px;
-
+  height: 80px;
+  border-bottom: lighten(variables.$primary-color, 10%) solid 1px;
   width: 100vw;
+  background: lighten(variables.$primary-color, 5%);
 
   &__hover-box{
     display: flex;
@@ -58,6 +28,7 @@
     position: fixed;
     z-index: 10;
     padding: 10px;
+    margin-top: 5px;
   }
   &__hamburger{
 
@@ -106,13 +77,17 @@
     bottom: 0;
     height: 0;
     width: 100vw;
-    background: darkgray;
+    background: lighten(variables.$primary-color, 10%);
     z-index: 9;
     transition: all 1s ease-in-out;
 
     //display: none;
     &.is_open{
       height: 100vh;
+
+    }
+    &.is_open .mobile-text{
+      transform: translateX(0) !important;
     }
     &__link-container{
       display: flex;
@@ -122,23 +97,64 @@
       &__link{
         font-size: clamp(1.5rem, 3vw, 3rem);
         padding: clamp(1rem, 3vw, 2rem) clamp(1.5rem, 3vw, 3rem);
-        color: variables.$primary-color;
-        &:hover{
-          color:lighten(variables.$primary-color, 10%);
-        }
+        color: variables.$call-to-action-color;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
       }
     }
   }
 
 }
-
-@media (max-width: variables.$mobile) {
-  .Menu-bar-mobile{
-    display: unset;
-
+.mobile-arrow{
+  display: none;
+  font-weight: bold;
+  font-size: 3rem;
+}
+.mobile-text{
+   transform: translateX(-10vw);
+   transition: transform 1s ease-in-out !important;
+ }
+@media (min-width: variables.$mobile) {
+  .Menu-bar__link{
+    text-align: center;
+    color: variables.$text-color;
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    padding: clamp(1rem, 3vw, 2rem) clamp(3rem, 8vw, 11rem);
+    border-bottom: variables.$standard-grey-boarder;
+    transition: .6s all ease-in-out;
+    position: relative;
+    box-sizing: border-box;
+    &:first-of-type{
+      border-top: variables.$standard-grey-boarder;
+    }
+    &:hover{
+      border-bottom: 1px solid variables.$call-to-action-color;
+      color: variables.$call-to-action-color;
+    }
+    &:hover:before{
+      transition: width .6s ease;
+      width: 100%;
+    }
+    &:before{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 0;
+      height: 100%;
+      background: linear-gradient(
+                      to right,
+                      transparent,
+                      variables.$call-to-action-color 80%,
+      );
+    }
   }
-  .Menu-bar{
-    display: none;
+}
+@media (max-width: variables.$mobile) {
+  .mobile-arrow{
+    display: unset;
   }
 }
 

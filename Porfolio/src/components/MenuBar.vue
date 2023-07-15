@@ -1,18 +1,24 @@
 <template>
-  <nav class="Menu-bar">
+<!--  <nav class="Menu-bar">
     <RouterLink class="Menu-bar__link" to="/">Home</RouterLink>
     <RouterLink class="Menu-bar__link" to="/projects">Projects</RouterLink>
     <RouterLink class="Menu-bar__link" to="/about">About</RouterLink>
-  </nav>
+  </nav>-->
   <div class="Menu-bar-mobile">
     <div class="Menu-bar-mobile__hover-box" @click="toggle_mobile_menu">
       <div class="Menu-bar-mobile__hamburger" ref="hamburger_div"></div>
     </div>
     <div class="Menu-bar-mobile__side-panel" ref="side_panel">
       <nav class="Menu-bar-mobile__side-panel__link-container">
-        <RouterLink class="Menu-bar-mobile__side-panel__link-container__link" to="/" @click="toggle_mobile_menu">Home</RouterLink>
-        <RouterLink class="Menu-bar-mobile__side-panel__link-container__link" to="/projects" @click="toggle_mobile_menu">Projects</RouterLink>
-        <RouterLink class="Menu-bar-mobile__side-panel__link-container__link" to="/about" @click="toggle_mobile_menu">About</RouterLink>
+        <RouterLink class="Menu-bar-mobile__side-panel__link-container__link Menu-bar__link" to="/" @click="toggle_mobile_menu">
+         <span class="mobile-text">Home</span> <span class="mobile-arrow">&rsaquo;</span>
+        </RouterLink>
+        <RouterLink class="Menu-bar-mobile__side-panel__link-container__link Menu-bar__link" to="/projects" @click="toggle_mobile_menu">
+          <span class="mobile-text">Projects</span> <span class="mobile-arrow">&rsaquo;</span>
+        </RouterLink>
+        <RouterLink class="Menu-bar-mobile__side-panel__link-container__link Menu-bar__link" to="/about" @click="toggle_mobile_menu">
+          <span class="mobile-text">About</span> <span class="mobile-arrow">&rsaquo;</span>
+        </RouterLink>
       </nav>
 
     </div>
