@@ -61,6 +61,20 @@ html:has(.menu_is_open) {
   overflow: hidden;
 }
 
+.noSelect {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.noSelect:focus {
+  outline: none !important;
+}
+
 .swiper-scrollbar {
   background: rgba(94, 234, 212, 0.4) !important;
   width: 60% !important;
@@ -79,7 +93,7 @@ html:has(.menu_is_open) {
 .mySwiper {
   width: 80%;
   height: fit-content !important;
-  padding: 2vh 5rem;
+  padding: 0 5rem;
   overflow: hidden;
 }
 

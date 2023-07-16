@@ -6,7 +6,7 @@
       <input type="email" name="email" placeholder="Your Email Address" class="Contact-Form-Wrapper__form-input Contact-Form-Wrapper__form-email" required>
       <textarea name="message" placeholder="Your Message" class="Contact-Form-Wrapper__form-textarea" required></textarea>
       <input type="hidden" name="_next" value="/">
-      <button type="submit" class="Contact-Form-Wrapper__form-submit btn">Contact Me</button>
+      <button type="submit" class="Contact-Form-Wrapper__form-submit btn noSelect">Contact Me</button>
     </form>
   </div>
 </template>

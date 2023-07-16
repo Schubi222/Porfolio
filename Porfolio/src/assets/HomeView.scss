@@ -9,13 +9,52 @@
   container-type: inline-size;
   /*TODO: THINK ABOUT CENTER OR NOT*/
   text-align: center;
+
+  &__logo{
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius:100%;
+    aspect-ratio: 1/1;
+    justify-content: center;
+    padding:16px;
+    background: radial-gradient(circle, rgba(15,23,42,1) 50%, rgba(94,234,212,1) 150%);
+    position: relative;
+    overflow: hidden;
+    &:before{
+      content: "";
+      position: absolute;
+      background: radial-gradient(circle, rgba(15,23,42,1) 50%, rgba(94,234,212,1) 90%);
+      height: 100%;
+      width: 100%;
+      left: 0;
+      right: 0;
+      border-radius:100%;
+      aspect-ratio: 1/1;
+      transition: all .7s ease;
+      transform: scale3d(0,0,0);
+    }
+    & > div{
+      z-index: 1;
+    }
+    &:hover:before{
+      transform: scale3d(100%,100%,100%);
+    }
+    &-first-line{
+
+    }
+    &-second-line{
+      margin-left: 2rem;
+    }
+
+  }
   &__text-field{
     width: clamp(500px, 270px + 30cqi,750px);
-    padding: 2rem 0;
+    padding: 0;
     height: fit-content;
     margin-top: variables.$home-component-separation;
   }
-
 }
 
 
@@ -26,6 +65,12 @@
   margin-top: variables.$home-component-separation;
   container-type: inline-size;
   width: 100%;
+  & > h1{
+    margin-top: 0;
+  }
+  &>p:last-of-type{
+    margin-bottom: 0 !important;
+  }
   &__link{
     font-size: variables.$basic-font-size;
     color: variables.$text-color;

@@ -13,9 +13,44 @@ $text-color:#E6EFFF;
   /*TODO: THINK ABOUT CENTER OR NOT*/
   text-align: center;
 }
+.Home-View__logo {
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 100%;
+  aspect-ratio: 1/1;
+  justify-content: center;
+  padding: 16px;
+  background: radial-gradient(circle, rgb(15, 23, 42) 50%, rgb(94, 234, 212) 150%);
+  position: relative;
+  overflow: hidden;
+}
+.Home-View__logo:before {
+  content: "";
+  position: absolute;
+  background: radial-gradient(circle, rgb(15, 23, 42) 50%, rgb(94, 234, 212) 90%);
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  border-radius: 100%;
+  aspect-ratio: 1/1;
+  transition: all 0.7s ease;
+  transform: scale3d(0, 0, 0);
+}
+.Home-View__logo > div {
+  z-index: 1;
+}
+.Home-View__logo:hover:before {
+  transform: scale3d(100%, 100%, 100%);
+}
+.Home-View__logo-second-line {
+  margin-left: 2rem;
+}
 .Home-View__text-field {
   width: clamp(500px, 270px + 30cqi, 750px);
-  padding: 2rem 0;
+  padding: 0;
   height: fit-content;
   margin-top: 5rem;
 }
@@ -28,6 +63,12 @@ $text-color:#E6EFFF;
   margin-top: 5rem;
   container-type: inline-size;
   width: 100%;
+}
+.Github-Wrapper > h1 {
+  margin-top: 0;
+}
+.Github-Wrapper > p:last-of-type {
+  margin-bottom: 0 !important;
 }
 .Github-Wrapper__link {
   font-size: 24px;

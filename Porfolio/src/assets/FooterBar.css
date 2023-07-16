@@ -16,6 +16,9 @@ $text-color:#E6EFFF;
   border-top: 1px solid;
   border-image: radial-gradient(circle, rgb(148, 163, 184) 65%, rgb(15, 23, 42) 90%) 10;
 }
+.Footer-Bar-Wrapper__Copyright {
+  padding-right: 5px;
+}
 .Footer-Bar-Wrapper__icon-wrapper {
   display: flex;
   gap: 1rem;
@@ -40,6 +43,18 @@ $text-color:#E6EFFF;
 
 .github:hover {
   background-color: black;
+}
+
+@media (max-width: 768px) {
+  .Footer-Bar-Wrapper {
+    padding: 0 5px;
+    border-image: radial-gradient(circle, rgb(148, 163, 184) 65%, rgb(15, 23, 42) 95%) 10;
+  }
+}
+@media (max-width: 500px) {
+  .Footer-Bar-Wrapper__Copyright {
+    padding-right: 15px;
+  }
 }
 
 /*# sourceMappingURL=FooterBar.css.map */

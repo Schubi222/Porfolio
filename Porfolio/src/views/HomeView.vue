@@ -1,30 +1,34 @@
 <template>
   <div class="Home-View">
+    <div class="Home-View__logo noSelect">
+      <div class="Home-View__logo-first-line">Fabian</div>
+      <div class="Home-View__logo-second-line">Schubert</div>
+    </div>
     <PerfectTextField :text="about_text" :link="about_link" class="Home-View__text-field"/>
     <swiper
         :centered-slides="true"
         :initial-slide="0"
-        :slides-per-view="5"
+        :slides-per-view="slides_per_view || 5"
         :space-between="30"
         :speed="600"
         :parallax="true"
         :scrollbar="true"
         :modules="modules"
         class="mySwiper">
-      <swiper-slide class="swiper_custom_slide" @click="$router.push(`/projects/${projects[0].name}`)" >
+      <swiper-slide class="swiper_custom_slide noSelect" @click="$router.push(`/projects/${projects[0].name}`)" >
         <img :src="'./src/assets/imgs/'+projects[0].name+'.png'" alt="" data-swiper-parallax="-10%" data-swiper-parallax-scale=".95">
       </swiper-slide>
-      <swiper-slide class="swiper_custom_slide" @click="$router.push(`/projects/${projects[1].name}`)">
+      <swiper-slide class="swiper_custom_slide noSelect" @click="$router.push(`/projects/${projects[1].name}`)">
         <img :src="'./src/assets/imgs/'+projects[1].name+'.png'" alt="" data-swiper-parallax="-10%" data-swiper-parallax-scale=".95">
       </swiper-slide>
-      <swiper-slide class="swiper_custom_slide" @click="$router.push(`/projects/${projects[2].name}`)" >
+      <swiper-slide class="swiper_custom_slide noSelect" @click="$router.push(`/projects/${projects[2].name}`)" >
         <img :src="'./src/assets/imgs/'+projects[2].name+'.png'" alt="" data-swiper-parallax="-10%" data-swiper-parallax-scale=".95">
       </swiper-slide>
-      <swiper-slide class="swiper_custom_slide" @click="$router.push(`/projects/${projects[3].name}`)" >
+      <swiper-slide class="swiper_custom_slide noSelect" @click="$router.push(`/projects/${projects[3].name}`)" >
         <img :src="'./src/assets/imgs/'+projects[3].name+'.png'" alt="" data-swiper-parallax="-10%" data-swiper-parallax-scale=".95">
       </swiper-slide>
     </swiper>
-    <RouterLink class="btn big_btn" to="/projects">All Projects</RouterLink>
+    <RouterLink class="btn big_btn noSelect" to="/projects">All Projects</RouterLink>
 
     <div class="Github-Wrapper">
       <h1>My Github Statistics</h1>
@@ -32,10 +36,9 @@
         <div>Want to access my repo?</div>
         <img class="Github-Wrapper__link-icon" src="@/assets/imgs/github_logo.png" alt="github logo"/>
       </a>
-      <p><img src="https://github-readme-streak-stats.herokuapp.com?user=schubi222&theme=dark" alt="schubi222" /></p>
-      <p><img class="Github-Wrapper__second" src="https://github-readme-stats.vercel.app/api/top-langs/?username=schubi222&langs_count=5&theme=dark" alt="schubi222" /></p>
+      <p><img class="noSelect" src="https://github-readme-streak-stats.herokuapp.com?user=schubi222&theme=dark" alt="schubi222" /></p>
+      <p><img class="Github-Wrapper__second noSelect" src="https://github-readme-stats.vercel.app/api/top-langs/?username=schubi222&langs_count=5&theme=dark" alt="schubi222" /></p>
     </div>
-
     <ContactForm id="contact"/>
   </div>
 </template>
@@ -61,6 +64,23 @@
   const about_link = {to: 'about', text:'Want to read more about me?'}
   const modules = [Scrollbar, Parallax]
   const supported_jumps = ['contact']
+
+  let slides_per_view = ref(0)
+
+  const calc_slides_per_view = (() =>{
+    const window_size = window.screen.width
+    if (window_size > 1024){slides_per_view.value=5}
+    else if (window_size > 768){slides_per_view.value=3}
+    else if (window_size > 425){slides_per_view.value=2}
+    else {slides_per_view.value=1}
+  })
+
+  calc_slides_per_view()
+
+  window.addEventListener('resize',() => {
+    calc_slides_per_view()
+    });
+
 
   onMounted(() =>{
     const jump_to = window.location.href.split("/#")?.at(1);

@@ -39,7 +39,7 @@ import json from "@/assets/Data/cv.json"
 import {ref} from "vue";
 
 const entry_objects = ref(json.entries)
-console.log(json.entries)
+
 </script>
 
 
