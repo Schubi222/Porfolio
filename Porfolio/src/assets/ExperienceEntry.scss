@@ -44,3 +44,13 @@ $text-placement: left;
     }
   }
 }
+
+@media (width < variables.$tablet) {
+  .Experience-Entry-Wrapper{
+    display: flex;
+    flex-direction: column;
+    &__body{
+      margin-left: 0;
+    }
+  }
+}

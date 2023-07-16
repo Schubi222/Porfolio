@@ -43,4 +43,14 @@ $text-color:#E6EFFF;
   border: 1px solid rgb(94, 234, 212) !important;
 }
 
+@media (width < 768px) {
+  .Experience-Entry-Wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .Experience-Entry-Wrapper__body {
+    margin-left: 0;
+  }
+}
+
 /*# sourceMappingURL=ExperienceEntry.css.map */
