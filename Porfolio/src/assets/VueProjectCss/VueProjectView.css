@@ -6,6 +6,15 @@ $text-color:#E6EFFF;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+}
+.Vue-Project-View-Wrapper__back-btn {
+  position: absolute;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 24px;
+  color: rgb(148, 163, 184);
+  align-self: flex-start !important;
 }
 .Vue-Project-View-Wrapper__logo {
   width: fit-content;
@@ -13,6 +22,7 @@ $text-color:#E6EFFF;
   display: flex;
   justify-content: center;
   margin-bottom: 5rem;
+  margin-top: 2.5rem;
 }
 .Vue-Project-View-Wrapper__logo > img {
   width: calc(100px + 5vw);

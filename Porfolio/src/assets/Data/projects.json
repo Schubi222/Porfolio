@@ -1,20 +1,19 @@
 {
   "projects": [
     {
-      "name": "calculator",
+      "name": "Vue Projects Collection",
       "tags": [
         "Beginner",
         "Vue.js"
       ],
-      "img": "calculator.png",
-      "link": "projects/calculator",
+      "img": "Vue-Projects-Collection.png",
+      "link": "Vue-Projects-Collection",
       "width": 250,
       "date": "2023",
-      "description": "This project served purely as a training example for getting familiar with vue.",
+      "description": "This project is a collection of small applications which where built using Vue.js with the sole purpose of learning Vue and other technologies.",
       "type": "Web App",
-      "project_link": null,
+      "project_link": "/vue-projects",
       "large_img_src": ""
-
     },
     {
       "name": "AAAAAAAA",
@@ -22,7 +21,7 @@
         "Beginner",
         "Vue.js"
       ],
-      "img": "calculator.png",
+      "img": "Vue-Projects-Collection.png",
       "link": "projects/calculator",
       "width": 250,
       "date": "2023",

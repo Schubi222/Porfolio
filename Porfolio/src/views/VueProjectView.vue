@@ -1,5 +1,6 @@
 <template>
 <div class="Vue-Project-View-Wrapper">
+  <div class="Vue-Project-View-Wrapper__back-btn animated-link" @click="$router.back()">&#11013; Back</div>
   <div class="Vue-Project-View-Wrapper__logo"> <img class="main_Menu_Item main_Menu_Img" src="@/assets/logo.svg" alt="logo" /></div>
   <PerfectTextField :text="text" class="Vue-Project-View-Wrapper__description"/>
   <div class="Vue-Project-View-Wrapper__applications">

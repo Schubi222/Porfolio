@@ -35,6 +35,9 @@
       max-width: 40ch;
       line-height: variables.$basic-line-hight;
     }
+    &-view-project-link{
+      color: variables.$call-to-action-color;
+    }
     &-img{
       width: 100%;
       height: 100%;

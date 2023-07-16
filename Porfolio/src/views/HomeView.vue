@@ -15,17 +15,17 @@
         :scrollbar="true"
         :modules="modules"
         class="mySwiper">
-      <swiper-slide class="swiper_custom_slide noSelect" @click="$router.push(`/projects/${projects[0].name}`)" >
-        <img :src="'./src/assets/imgs/'+projects[0].name+'.png'" alt="" data-swiper-parallax="-10%" data-swiper-parallax-scale=".95">
+      <swiper-slide class="swiper_custom_slide noSelect" @click="$router.push(`/projects/${projects[0].link}`)" >
+        <img :src="'./src/assets/imgs/'+projects[0].link+'.png'" alt="" data-swiper-parallax="-10%" data-swiper-parallax-scale=".95">
       </swiper-slide>
-      <swiper-slide class="swiper_custom_slide noSelect" @click="$router.push(`/projects/${projects[1].name}`)">
-        <img :src="'./src/assets/imgs/'+projects[1].name+'.png'" alt="" data-swiper-parallax="-10%" data-swiper-parallax-scale=".95">
+      <swiper-slide class="swiper_custom_slide noSelect" @click="$router.push(`/projects/${projects[1].link}`)">
+        <img :src="'./src/assets/imgs/'+projects[1].link+'.png'" alt="" data-swiper-parallax="-10%" data-swiper-parallax-scale=".95">
       </swiper-slide>
-      <swiper-slide class="swiper_custom_slide noSelect" @click="$router.push(`/projects/${projects[2].name}`)" >
-        <img :src="'./src/assets/imgs/'+projects[2].name+'.png'" alt="" data-swiper-parallax="-10%" data-swiper-parallax-scale=".95">
+      <swiper-slide class="swiper_custom_slide noSelect" @click="$router.push(`/projects/${projects[2].link}`)" >
+        <img :src="'./src/assets/imgs/'+projects[2].link+'.png'" alt="" data-swiper-parallax="-10%" data-swiper-parallax-scale=".95">
       </swiper-slide>
-      <swiper-slide class="swiper_custom_slide noSelect" @click="$router.push(`/projects/${projects[3].name}`)" >
-        <img :src="'./src/assets/imgs/'+projects[3].name+'.png'" alt="" data-swiper-parallax="-10%" data-swiper-parallax-scale=".95">
+      <swiper-slide class="swiper_custom_slide noSelect" @click="$router.push(`/projects/${projects[3].link}`)" >
+        <img :src="'./src/assets/imgs/'+projects[3].link+'.png'" alt="" data-swiper-parallax="-10%" data-swiper-parallax-scale=".95">
       </swiper-slide>
     </swiper>
     <RouterLink class="btn big_btn noSelect" to="/projects">All Projects</RouterLink>

@@ -5,12 +5,22 @@ $vue-blue:#35495E;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  &__back-btn{
+    position: absolute;
+    cursor: pointer;
+    padding: 5px;
+    font-size: variables.$basic-font-size;
+    color: variables.$text-color;
+    align-self: flex-start !important;
+  }
   &__logo{
     width: fit-content;
     height: fit-content;
     display: flex;
     justify-content: center;
     margin-bottom: 5rem;
+    margin-top:2.5rem;
     & > img{
       width: calc(100px + 5vw);
       max-width: 180px;

@@ -1,5 +1,5 @@
 <template>
-  <RouterLink :to="router_link" class="Project-Card-Link">
+  <RouterLink :to="'/projects/'+router_link" class="Project-Card-Link">
     <div class="Project-Card">
       <img :src="'./src/assets/imgs/'+img_src" alt="Image representing the project" class="Project-Card__img">
       <div class="Hover-Wrapper">
