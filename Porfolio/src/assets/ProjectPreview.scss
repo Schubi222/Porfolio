@@ -1,5 +1,6 @@
 @use "variables";
 .Project-Preview-Wrapper{
+  margin-top: 1rem;
   &__back-btn{
     position: absolute;
     cursor: pointer;
@@ -26,6 +27,7 @@
     border-bottom: 1px solid;
     &-name{
       color: variables.$heading-color;
+      line-height: 58px;
     }
     &-date{
       color: variables.$sub-heading-color;
@@ -46,5 +48,18 @@
         height: 100%;
       }
     }
+  }
+}
+
+@media (max-width: variables.$tablet) {
+  .Project-Preview-Wrapper__content{
+    margin-left: 0;
+  }
+  
+}
+
+@media (max-width: 500px) {
+  .Project-Preview-Wrapper__content{
+    padding: 0;
   }
 }

@@ -22,7 +22,7 @@
 <script setup>
   import projects_file from '@/assets/Data/projects.json'
 
-  import {computed, onMounted, ref} from "vue";
+  import {onMounted, ref} from "vue";
 
   function searchProjectByName(name) {
     for (const project of projects_file.projects) {
