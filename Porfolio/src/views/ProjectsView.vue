@@ -19,7 +19,7 @@
 import ProjectCard from '@/components/ProjectCard.vue'
 import PerfectTextField from '@/components/PerfectTextField.vue'
 import projects_file from '@/assets/Data/projects.json'
-import {ref} from "vue";
+import {onMounted, ref} from "vue";
 
 const heading_welcome = 'Willkommen in meinem Porfolio!'
 const text_welcome = 'Ich bin ein ambitionierter Webentwickler aus Graz.' +
@@ -28,7 +28,13 @@ const text_welcome = 'Ich bin ein ambitionierter Webentwickler aus Graz.' +
 
 
 const projects = ref(projects_file.projects)
-
+onMounted(()=>{
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+})
 </script>
 
 <style scoped>

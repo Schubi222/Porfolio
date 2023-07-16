@@ -15,9 +15,16 @@
 <script setup>
 import {RouterView} from "vue-router";
 import PerfectTextField from "@/components/PerfectTextField.vue";
-import {ref} from "vue";
+import {onMounted, ref} from "vue";
 const text = ref("These are some small Vue.js projects I have built to improve my knowledge!")
 
+onMounted(()=>{
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+})
 </script>
 
 

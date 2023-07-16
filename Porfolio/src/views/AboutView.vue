@@ -36,10 +36,16 @@
 <script setup>
 import ExperienceEntry from "@/components/ExperienceEntry.vue";
 import json from "@/assets/Data/cv.json"
-import {ref} from "vue";
+import {onMounted, ref} from "vue";
 
 const entry_objects = ref(json.entries)
-
+onMounted(()=>{
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+})
 </script>
 
 

@@ -3,7 +3,7 @@
       <div class="Project-Preview-Wrapper__back-btn animated-link" @click="$router.back()">&#11013; Back</div>
     <div class="Project-Preview-Wrapper__content">
       <div class="Project-Preview-Wrapper__content-date">{{ date }}</div>
-      <h1 class="Project-Preview-Wrapper__content-name">{{capitalizedName}}</h1>
+      <h1 class="Project-Preview-Wrapper__content-name">{{name}}</h1>
       <div class="Project-Preview-Wrapper__content-description">{{description}}</div>
       <div class="Project-Preview-Wrapper__content-type">{{type}}</div>
       <div class="Project-Preview-Wrapper__content-view-project" v-if="project_link">
@@ -22,7 +22,7 @@
 <script setup>
   import projects_file from '@/assets/Data/projects.json'
 
-  import {computed, ref} from "vue";
+  import {computed, onMounted, ref} from "vue";
 
   function searchProjectByName(name) {
     for (const project of projects_file.projects) {
@@ -41,11 +41,15 @@
   const type = ref(project.type)
   const project_link = ref(project.project_link)
   const img = ref(project.large_img_src)
-  console.log(project_link.value)
-  const capitalizedName = computed(() =>{
-    const capitalizedFirst = name.value[0].toUpperCase();
-    const rest = name.value.slice(1);
-    return capitalizedFirst + rest;
+
+
+
+  onMounted(()=>{
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
   })
 </script>
 
