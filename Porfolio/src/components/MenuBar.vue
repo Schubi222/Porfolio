@@ -4,8 +4,8 @@
     <RouterLink class="Menu-bar__link" to="/projects">Projects</RouterLink>
     <RouterLink class="Menu-bar__link" to="/about">About</RouterLink>
   </nav>-->
-  <div class="Menu-bar-mobile">
-    <div class="Menu-bar-mobile__hover-box" @click="toggle_mobile_menu">
+  <div class="Menu-bar-mobile noSelect">
+    <div class="Menu-bar-mobile__hover-box " @click="toggle_mobile_menu">
       <div class="Menu-bar-mobile__hamburger" ref="hamburger_div"></div>
     </div>
     <div class="Menu-bar-mobile__side-panel" ref="side_panel">
