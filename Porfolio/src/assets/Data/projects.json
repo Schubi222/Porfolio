@@ -6,7 +6,7 @@
         "Beginner",
         "Vue.js"
       ],
-      "img": "Vue-Projects-Collection.png",
+      "img": "VueProjects.svg",
       "link": "Vue-Projects-Collection",
       "width": 250,
       "date": "2023",
@@ -22,7 +22,7 @@
         "Vue.js"
       ],
       "img": "Vue-Projects-Collection.png",
-      "link": "projects/calculator",
+      "link": "calculator",
       "width": 250,
       "date": "2023",
       "description": "This project served purely as a training example for getting familiar with vue.",

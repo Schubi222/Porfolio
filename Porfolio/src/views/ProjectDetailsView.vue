@@ -30,7 +30,7 @@
         return project;
       }
     }
-    return null; // Return null if the project is not found
+    return null;
   }
 
   const project = searchProjectByName(window.location.pathname.split("/").pop())

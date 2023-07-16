@@ -98,21 +98,21 @@ html:has(.menu_is_open) {
 }
 
 .swiper_custom_slide {
-  height: clamp(200px, 100px + 20vw, 400px);
+  height: clamp(300px, 250px + 10vw, 400px);
+  width: clamp(300px, 250px + 10vw, 400px);
   overflow: hidden;
   border-radius: 10px;
-  padding: 10px;
+  padding: 5px;
   box-sizing: border-box;
   cursor: pointer;
   position: relative;
+  container-type: inline-size;
+  display: flex;
+  justify-content: center;
 }
 .swiper_custom_slide img {
   border-radius: 15px;
-  width: 130%;
-  height: 130%;
-  position: absolute;
-  left: -10%;
-  top: -10%;
+  aspect-ratio: 1/1;
 }
 
 .swiper-scrollbar {
