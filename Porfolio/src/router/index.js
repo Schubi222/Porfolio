@@ -4,6 +4,9 @@ import ProjectView from '@/views/ProjectsView.vue'
 import AboutView from "@/views/AboutView.vue";
 import ProjectDetailsView from "@/views/ProjectDetailsView.vue";
 import ImprintView from "@/views/ImprintView.vue";
+import VueProjectView from "@/views/VueProjectView.vue";
+import VueCalculator from "@/components/VueProjectComponents/VueCalculator.vue";
+import VueMathQuiz from "@/components/VueProjectComponents/VueMathQuiz.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -34,6 +37,25 @@ const router = createRouter({
       name: 'imprint',
       component: ImprintView
     },
+
+    {
+      path: '/vue-projects',
+      name: 'vue-projects',
+      component: VueProjectView,
+      children:[
+        {
+          path: 'calculator',
+          name: 'calculator',
+          component: VueCalculator
+        },
+        {
+          path: 'math-quiz',
+          name: 'math-quiz',
+          component: VueMathQuiz
+        }
+      ]
+    },
+
   ]
 })
 

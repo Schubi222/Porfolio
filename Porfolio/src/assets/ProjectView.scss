@@ -15,6 +15,7 @@ $grid-item-size-norm:400px;
   overflow: hidden;
   width: 25%;
   max-height: 400px;
+  aspect-ratio: 1.3/1;
 }
 .Welcome-Text-Field{
   width: 50%;
@@ -22,7 +23,7 @@ $grid-item-size-norm:400px;
   max-height: 400px;
 }
 
-@media (max-width:variables.$mobile) {
+@media (max-width:1200px) {
   .Project-View-Wrapper__project-card{
     width: 50%;
   }
@@ -33,5 +34,6 @@ $grid-item-size-norm:400px;
   }
   .Welcome-Text-Field{
     width: 100%;
+    margin-bottom: 1rem;
   }
 }
