@@ -12,31 +12,44 @@
 .swiper-scrollbar-drag{
   background: rgba(94,234,212,1) !important;
   width: 80% !important;
-  background: radial-gradient(circle, rgba(94,234,212,1) 96%, rgba(0,212,255,0) 100%) !important;
-  left: -4% !important;
+  background: radial-gradient(circle, rgba(94,234,212,1) 94%, rgba(0,212,255,0) 100%) !important;
+  left: -5% !important;
 }
 
 .mySwiper{
-  width: 80%;
-  height: fit-content !important;
+
   padding: 0 5rem;
   overflow: hidden;
+  width: 100%;
+  height: fit-content !important;
+  position: relative;
+}
+
+.swiper-wrapper{
+  /*margin: 0 0 2rem 0;*/
+  container-type: size;
+  height: clamp(300px, 250px + 10vw,400px) !important;
+  width: 100% !important;
+  margin: 0 !important;
+  position: relative;
 }
 .swiper_custom_slide{
-  height: clamp(200px,calc(100px + 20vw) ,400px);
-  overflow: hidden;
+  height: 100cqh !important;
+  width: 25cqw !important;
+
   border-radius: 10px;
-  padding: 10px;
+  margin: 0 0 2rem 0;
+  color: #05070e;
   box-sizing: border-box;
   cursor: pointer;
   position: relative;
+  overflow: visible;
+  display: flex;
+  justify-content: center;
   & img{
     border-radius: 15px;
-    width: 130%;
-    height: 130%;
-    position: absolute;
-    left: -10%;
-    top: -10%;
+
+    aspect-ratio: 1/1;
   }
 }
 .swiper-scrollbar{
@@ -46,5 +59,25 @@
   .mySwiper{
     padding: 2vh 1rem;
     width: 100%;
+  }
+  .swiper_custom_slide{
+    width: 33cqw !important;
+  }
+}
+@media (max-width: variables.$tablet) {
+  .swiper_custom_slide{
+    width: 50cqw !important;
+  }
+  .swiper-scrollbar-drag{
+    width: 35% !important;
+    background: radial-gradient(circle, rgba(94,234,212,1) 80%, rgba(0,212,255,0) 100%) !important;
+  }
+  .swiper-scrollbar{
+    width: 80% !important;
+  }
+}
+@media (max-width: variables.$phone) {
+  .swiper_custom_slide{
+    width: 100cqw !important;
   }
 }
