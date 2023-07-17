@@ -9,23 +9,23 @@
         :centered-slides="true"
         :initial-slide="0"
         :slides-per-view="slides_per_view || 4"
-        :space-between="10"
+        :space-between="0"
         :speed="600"
         :parallax="true"
         :scrollbar="true"
         :modules="modules"
         class="mySwiper">
       <swiper-slide class="swiper_custom_slide noSelect" @click="$router.push(`/projects/${projects[0].link}`)" >
-        <img :src="'./src/assets/imgs/'+searchProjectByName(projects[0].link).img" alt="" data-swiper-parallax="-20%" data-swiper-parallax-scale=".95">
+        <img :src="'./src/assets/imgs/'+searchProjectByName(projects[0].link).img" alt="" data-swiper-parallax="-20%" data-swiper-parallax-scale="1">
       </swiper-slide>
       <swiper-slide class="swiper_custom_slide noSelect" @click="$router.push(`/projects/${projects[1].link}`)">
-        <img :src="'./src/assets/imgs/'+searchProjectByName(projects[1].link).img" alt="" data-swiper-parallax="-20%" data-swiper-parallax-scale=".95">
+        <img :src="'./src/assets/imgs/'+searchProjectByName(projects[1].link).img" alt="" data-swiper-parallax="-20%" data-swiper-parallax-scale="1">
       </swiper-slide>
       <swiper-slide class="swiper_custom_slide noSelect" @click="$router.push(`/projects/${projects[2].link}`)" >
-        <img :src="'./src/assets/imgs/'+searchProjectByName(projects[2].link).img" alt="" data-swiper-parallax="-20%" data-swiper-parallax-scale=".95">
+        <img :src="'./src/assets/imgs/'+searchProjectByName(projects[2].link).img" alt="" data-swiper-parallax="-20%" data-swiper-parallax-scale="1">
       </swiper-slide>
       <swiper-slide class="swiper_custom_slide noSelect" @click="$router.push(`/projects/${projects[3].link}`)" >
-        <img :src="'./src/assets/imgs/'+searchProjectByName(projects[3].link).img" alt="" data-swiper-parallax="-20%" data-swiper-parallax-scale=".95">
+        <img :src="'./src/assets/imgs/'+searchProjectByName(projects[3].link).img" alt="" data-swiper-parallax="-20%" data-swiper-parallax-scale="1">
       </swiper-slide>
     </swiper>
     <RouterLink class="btn big_btn noSelect" to="/projects">All Projects</RouterLink>
@@ -84,6 +84,7 @@
     else if (window_size > 768){slides_per_view.value=3}
     else if (window_size > 425){slides_per_view.value=2}
     else {slides_per_view.value=1}
+    console.log(slides_per_view.value)
   })
 
   calc_slides_per_view()

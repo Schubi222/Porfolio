@@ -86,27 +86,37 @@ html:has(.menu_is_open) {
 .swiper-scrollbar-drag {
   background: rgb(94, 234, 212) !important;
   width: 80% !important;
-  background: radial-gradient(circle, rgb(94, 234, 212) 96%, rgba(0, 212, 255, 0) 100%) !important;
-  left: -4% !important;
+  background: radial-gradient(circle, rgb(94, 234, 212) 94%, rgba(0, 212, 255, 0) 100%) !important;
+  left: -5% !important;
 }
 
 .mySwiper {
-  width: 80%;
-  height: fit-content !important;
   padding: 0 5rem;
   overflow: hidden;
+  width: 100%;
+  height: fit-content !important;
+  position: relative;
+}
+
+.swiper-wrapper {
+  /*margin: 0 0 2rem 0;*/
+  container-type: size;
+  height: clamp(300px, 250px + 10vw, 400px) !important;
+  width: 100% !important;
+  margin: 0 !important;
+  position: relative;
 }
 
 .swiper_custom_slide {
-  height: clamp(300px, 250px + 10vw, 400px);
-  width: clamp(300px, 250px + 10vw, 400px);
-  overflow: hidden;
+  height: 100cqh !important;
+  width: 25cqw !important;
   border-radius: 10px;
-  padding: 5px;
+  margin: 0 0 2rem 0;
+  color: #05070e;
   box-sizing: border-box;
   cursor: pointer;
   position: relative;
-  container-type: inline-size;
+  overflow: visible;
   display: flex;
   justify-content: center;
 }
@@ -123,6 +133,26 @@ html:has(.menu_is_open) {
   .mySwiper {
     padding: 2vh 1rem;
     width: 100%;
+  }
+  .swiper_custom_slide {
+    width: 33cqw !important;
+  }
+}
+@media (max-width: 768px) {
+  .swiper_custom_slide {
+    width: 50cqw !important;
+  }
+  .swiper-scrollbar-drag {
+    width: 35% !important;
+    background: radial-gradient(circle, rgb(94, 234, 212) 80%, rgba(0, 212, 255, 0) 100%) !important;
+  }
+  .swiper-scrollbar {
+    width: 80% !important;
+  }
+}
+@media (max-width: 425px) {
+  .swiper_custom_slide {
+    width: 100cqw !important;
   }
 }
 
