@@ -20,11 +20,7 @@
   const heading = ref(props.project.name)
   const img_src = ref(props.project.img)
   const router_link = ref(props.project.link)
-  // const width = ref(props.project.width);
 
-/*  const width_with_px = computed(()=>{
-    return width.value+'px'
-  })*/
 
 
 
@@ -32,7 +28,4 @@
 
 <style scoped>
 @import '../assets/ProjectCard.css';
-/*.Project-Card{
-  width: v-bind(width_with_px);
-}*/
 </style>

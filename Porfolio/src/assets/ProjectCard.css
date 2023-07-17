@@ -1,10 +1,12 @@
 .Project-Card-Link {
   width: 100%;
+  height: 100%;
 }
 
 .Project-Card {
   overflow: hidden;
   width: 100%;
+  height: 100%;
   cursor: pointer;
   margin: 0;
   padding: 0;
@@ -13,18 +15,19 @@
   position: relative;
   align-items: center;
   justify-content: center;
+  container-type: inline-size;
 }
 .Project-Card__img {
-  width: 100%;
-  height: 100%;
+  width: 100cqw;
+  height: 100cqh;
   margin: 0;
   padding: 0;
   transition: width 0.6s ease-in-out, height 0.6s ease-in-out, filter 0.2s 0.1s ease-in-out;
 }
 .Project-Card:hover .Project-Card__img {
   filter: blur(4px);
-  width: 110%;
-  height: 110%;
+  width: 110cqw;
+  height: 110cqh;
 }
 .Project-Card:hover .Hover-Wrapper {
   opacity: 1;
@@ -34,8 +37,8 @@
   position: absolute;
   top: 0;
   background: rgba(0, 0, 0, 0.4);
-  height: 105%;
-  width: 105%;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   Box-sizing: border-box;
