@@ -16,15 +16,20 @@
     line-height: variables.$basic-line-hight;
     gap: 1rem;
     margin: max(10%,100px) 0 0 2rem;
-    border-image:
-            linear-gradient(
-                            to right,
-                            rgba(148,163,184,1) 30%,
-                            rgba(15,23,42,1) 75%
-            ) 1 0;
+
 
     padding: 20px;
-    border-bottom: 1px solid;
+    &-border{
+      width: 100%;
+      border-image:
+              linear-gradient(
+                              to right,
+                              rgba(148,163,184,1) 30%,
+                              rgba(15,23,42,1) 75%
+              ) 1 0;
+      border-bottom: 1px solid;
+    }
+
     &-name{
       color: variables.$heading-color;
       line-height: 58px;

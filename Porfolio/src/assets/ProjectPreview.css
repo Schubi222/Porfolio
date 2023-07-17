@@ -20,8 +20,11 @@ $text-color:#E6EFFF;
   line-height: 36px;
   gap: 1rem;
   margin: max(10%, 100px) 0 0 2rem;
-  border-image: linear-gradient(to right, rgb(148, 163, 184) 30%, rgb(15, 23, 42) 75%) 1 0;
   padding: 20px;
+}
+.Project-Preview-Wrapper__content-border {
+  width: 100%;
+  border-image: linear-gradient(to right, rgb(148, 163, 184) 30%, rgb(15, 23, 42) 75%) 1 0;
   border-bottom: 1px solid;
 }
 .Project-Preview-Wrapper__content-name {

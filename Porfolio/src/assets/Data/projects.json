@@ -12,21 +12,38 @@
       "description": "This project is a collection of small applications which where built using Vue.js with the sole purpose of learning Vue and other technologies.",
       "type": "Web App",
       "project_link": "/vue-projects",
-      "large_img_src": ""
+      "large_img_src": "VueProjects.svg"
     },
     {
-      "name": "AAAAAAAA",
+      "name": "Portfolio",
       "tags": [
-        "Beginner",
-        "Vue.js"
+        "SCSS",
+        "Vue.js",
+        "Git"
       ],
-      "img": "Vue-Projects-Collection.png",
-      "link": "calculator",
+      "img": "Portfolio.png",
+      "link": "portfolio",
       "date": "2023",
-      "description": "This project served purely as a training example for getting familiar with vue.",
-      "type": "Web App",
-      "project_link": null,
-      "large_img_src": ""
+      "description": "This is the page you are currently on. Its purpose is twofold. The first is to showcase what I have built. The second is to simply have a larger vue project to increase my vue skills.",
+      "type": "Website",
+      "project_link": "/",
+      "large_img_src": "Portfolio.svg"
+    },
+    {
+      "name": "CS50W - Ticket System",
+      "tags": [
+        "JS",
+        "Django",
+        "Fullstack",
+        "CS50W"
+      ],
+      "img": "CS50W.png",
+      "link": "ticketsystem",
+      "date": "2023",
+      "description": "This ticket system was created as the last assignment of the course 'CS50's Web Programming with Python and JavaScript' by HarvardX. The task was to create a Website that uses what has been learned during the course and should exceed the previous tasks.",
+      "type": "Website",
+      "project_link":null,
+      "large_img_src": "CS50.svg"
     }
 
   ]

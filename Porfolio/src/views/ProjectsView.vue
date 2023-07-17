@@ -4,12 +4,6 @@
       <PerfectTextField class="Welcome-Text-Field" :heading="heading_welcome" :text="text_welcome"/>
       <RouterLink class="Project-View-Wrapper__project-card" :to="'/projects/'+project.link" v-for="project in projects" :key="project.link">
         <ProjectCard :project="project" />
-      </RouterLink>      <RouterLink class="Project-View-Wrapper__project-card" :to="'/projects/'+project.link" v-for="project in projects" :key="project.link">
-        <ProjectCard :project="project" />
-      </RouterLink>      <RouterLink class="Project-View-Wrapper__project-card" :to="'/projects/'+project.link" v-for="project in projects" :key="project.link">
-        <ProjectCard :project="project" />
-      </RouterLink>      <RouterLink class="Project-View-Wrapper__project-card" :to="'/projects/'+project.link" v-for="project in projects" :key="project.link">
-        <ProjectCard :project="project" />
       </RouterLink>
     </div>
   </div>

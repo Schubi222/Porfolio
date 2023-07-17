@@ -10,10 +10,10 @@
         <a class="Project-Preview-Wrapper__content-view-project-link animated-link" :href="project_link">
           View Project
         </a>
-
       </div>
+      <div class="Project-Preview-Wrapper__content-border"></div>
       <div class="Project-Preview-Wrapper__content-img" v-if="img">
-        <img :src="'./src/assets/imgs/'+img" alt="Image showcasing the project">
+        <img :src="'../src/assets/imgs/large_imgs/'+img" alt="Image showcasing the project">
       </div>
     </div>
   </div>
@@ -41,7 +41,6 @@
   const type = ref(project.type)
   const project_link = ref(project.project_link)
   const img = ref(project.large_img_src)
-
 
 
   onMounted(()=>{
