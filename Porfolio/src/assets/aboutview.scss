@@ -44,6 +44,9 @@ $text-placement: left;
       line-height: $line-height;
       text-align: left;
     }
+    & span{
+      color: lighten(variables.$text-color, 15%);
+    }
   }
   &__experience{
     margin-bottom: 3rem;
@@ -61,4 +64,16 @@ $text-placement: left;
       }
     }
   }
+}
+#Ice-Hockey-Animation:hover{
+  cursor: url('@/assets/imgs/IHC.png'),auto;
+}
+#Gym-Animation:hover{
+  cursor: url('@/assets/imgs/lifting.png'),auto;
+}
+#Read-Animation:hover{
+  cursor: url('@/assets/imgs/reading.png'),auto;
+}
+#Socialise-Animation:hover{
+  cursor: url('@/assets/imgs/social.png'),auto;
 }

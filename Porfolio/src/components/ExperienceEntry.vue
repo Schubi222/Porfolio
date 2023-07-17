@@ -1,5 +1,5 @@
 <template>
-  <div class="Experience-Entry-Wrapper">
+  <a class="Experience-Entry-Wrapper" :href="link">
     <div class="Experience-Entry-Wrapper__side-header">{{ timeline }}</div>
     <div class="Experience-Entry-Wrapper__body">
       <div class="Experience-Entry-Wrapper__body-heading">{{ heading }}</div>
@@ -9,7 +9,7 @@
         <div class="Experience-Entry-Wrapper__body-tags-tag" v-for="tag in tags" :key="tag">{{tag}}</div>
       </div>
     </div>
-  </div>
+  </a>
 </template>
 
 <script setup>
@@ -21,6 +21,7 @@
   const sub_heading = ref(props.entry.sub_heading)
   const text = ref(props.entry.text)
   const tags = ref(props.entry.tags)
+  const link = ref(props.entry.link)
 
 
 </script>

@@ -21,10 +21,13 @@ import PerfectTextField from '@/components/PerfectTextField.vue'
 import projects_file from '@/assets/Data/projects.json'
 import {onMounted, ref} from "vue";
 
-const heading_welcome = 'Willkommen in meinem Porfolio!'
-const text_welcome = 'Ich bin ein ambitionierter Webentwickler aus Graz.' +
+const heading_welcome = 'Welcome to my portfolio!'
+/*const text_welcome = 'Ich bin ein ambitionierter Webentwickler aus Graz.' +
     ' Stehts auf der nach neuen Herausforderungen versuche ich mir immer neue Fähigkeiten anzueignen.' +
-    ' Über die Zeit hat sich so mein kleines Portfolio angesammelt.'
+    ' Über die Zeit hat sich so mein kleines Portfolio angesammelt.'*/
+const text_welcome = 'I am an ambitious web developer from Graz (Austria). ' +
+    'Always looking for new challenges, always striving for improvement. ' +
+    'Over time, this small portfolio has accumulated.'
 
 
 const projects = ref(projects_file.projects)

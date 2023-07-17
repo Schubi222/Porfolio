@@ -13,6 +13,7 @@ $text-color:#E6EFFF;
   transition: 0.2s all ease-in-out;
   padding: 10px;
   border-radius: 2px;
+  color: rgb(148, 163, 184);
 }
 .Experience-Entry-Wrapper__side-header {
   color: rgba(148, 163, 184, 0.7);

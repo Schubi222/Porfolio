@@ -10,9 +10,8 @@
     <div class="CV-Wrapper">
       <div class="CV-Wrapper__personal">
         <p>
-          PLACEHOLDER:
-          This should be some text about myself concerning coding. Maybe from my beginnings to how I ended up in
-          Web dev and how I enjoy it.
+          In 2018 I started my journey as a developer with a bachelor's degree in Computer Science. When I finished my degree
+          in 2023 I decided that this was enough of academics and that my new focus should be building websites and applications.
         </p>
         <p>
           Currently my main focus is gathering more experience with different web technologies

@@ -45,6 +45,9 @@ $text-color:#E6EFFF;
   line-height: 36px;
   text-align: left;
 }
+.CV-Wrapper__personal span {
+  color: #c2cbd7;
+}
 .CV-Wrapper__experience {
   margin-bottom: 3rem;
 }
@@ -58,6 +61,22 @@ $text-color:#E6EFFF;
 }
 .CV-Wrapper__experience:hover .Experience-Entry-Wrapper:hover .Experience-Entry-Wrapper__body-heading {
   color: #5eead4 !important;
+}
+
+#Ice-Hockey-Animation:hover {
+  cursor: url("@/assets/imgs/IHC.png"), auto;
+}
+
+#Gym-Animation:hover {
+  cursor: url("@/assets/imgs/lifting.png"), auto;
+}
+
+#Read-Animation:hover {
+  cursor: url("@/assets/imgs/reading.png"), auto;
+}
+
+#Socialise-Animation:hover {
+  cursor: url("@/assets/imgs/social.png"), auto;
 }
 
 /*# sourceMappingURL=aboutview.css.map */

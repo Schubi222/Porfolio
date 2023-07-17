@@ -71,7 +71,7 @@
 
   const projects = ref(project_file.projects)
 
-  const about_text = "There is something you could do, you would do, that would make a difference.\n\n ~Jordan B. Peterson"
+  const about_text = "This is my portfolio! From my humble beginnings to my current standing."
   const about_link = {to: 'about', text:'Want to read more about me?'}
   const modules = [Scrollbar, Parallax]
   const supported_jumps = ['contact']
@@ -84,7 +84,6 @@
     else if (window_size > 768){slides_per_view.value=3}
     else if (window_size > 425){slides_per_view.value=2}
     else {slides_per_view.value=1}
-    console.log(slides_per_view.value)
   })
 
   calc_slides_per_view()
