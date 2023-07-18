@@ -7,6 +7,7 @@ $text-color:#E6EFFF;
   flex-direction: column;
   color: rgb(15, 23, 42);
   font-size: 18px;
+  width: 100%;
 }
 .Vue-BMI-Calculator-Wrapper p {
   line-height: 24px;
@@ -17,19 +18,21 @@ $text-color:#E6EFFF;
 .Vue-BMI-Calculator-Wrapper .Top-Wrapper {
   display: flex;
   flex-direction: row;
-  padding: 0 15%;
+  margin: auto;
+  width: 1100px;
   position: relative;
 }
 .Vue-BMI-Calculator-Wrapper .Top-Wrapper .Top-Wrapper__heading {
   box-sizing: border-box;
-  width: 80%;
+  width: 800px;
   background: rgba(135, 206, 235, 0.75);
   border-radius: 25px;
-  padding: 10rem 30% 5rem 2rem;
+  padding: 7rem 30% 4rem 2rem;
+  margin-right: 30%;
 }
 .Vue-BMI-Calculator-Wrapper .Top-Wrapper .Top-Wrapper__form-wrapper {
   box-sizing: border-box;
-  width: 30%;
+  width: 350px;
   background: white;
   border-radius: 25px;
   padding: max(10px, 2%);
@@ -115,6 +118,54 @@ $text-color:#E6EFFF;
 
 #red {
   background: rgba(255, 0, 0, 0.7);
+}
+
+@media (max-width: 1150px) {
+  .Vue-BMI-Calculator-Wrapper .Top-Wrapper {
+    width: 100%;
+  }
+}
+@media (max-width: 1023px) {
+  .Vue-BMI-Calculator-Wrapper .Top-Wrapper__heading {
+    width: 60% !important;
+    margin-right: 0 !important;
+    padding-right: 10% !important;
+  }
+  .Vue-BMI-Calculator-Wrapper .Top-Wrapper__form-wrapper {
+    width: 40% !important;
+    position: unset !important;
+  }
+}
+@media (max-width: 768px) {
+  .Vue-BMI-Calculator-Wrapper {
+    background: rgba(135, 206, 235, 0.75);
+    border-radius: 25px;
+    padding-bottom: 5rem;
+  }
+  .Vue-BMI-Calculator-Wrapper .Top-Wrapper {
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .Vue-BMI-Calculator-Wrapper .Top-Wrapper__heading {
+    width: 100% !important;
+    margin-right: 0 !important;
+    padding: 2rem !important;
+    height: 100%;
+    background: none !important;
+    text-align: center;
+  }
+  .Vue-BMI-Calculator-Wrapper .Top-Wrapper .Top-Wrapper__form-wrapper {
+    width: 70% !important;
+    padding: 1rem !important;
+  }
+  .Vue-BMI-Calculator-Wrapper .Top-Wrapper .Results-Wrapper {
+    margin-right: 0 !important;
+  }
+}
+@media (max-width: 425px) {
+  .Vue-BMI-Calculator-Wrapper .Top-Wrapper .Top-Wrapper__form-wrapper {
+    width: 94% !important;
+  }
 }
 
 /*# sourceMappingURL=VueBMICalculator.css.map */

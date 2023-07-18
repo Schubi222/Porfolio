@@ -4,6 +4,7 @@
   flex-direction: column;
   color: variables.$primary-color;
   font-size: 18px;
+  width: 100%;
   p{
     line-height: 24px;
   }
@@ -13,19 +14,21 @@
   .Top-Wrapper{
     display: flex;
     flex-direction: row;
-    padding: 0 15%;
+    margin: auto;
+    width: 1100px;
     position: relative;
     .Top-Wrapper__heading{
       box-sizing: border-box;
-      width: 80%;
+      width: 800px;
       background: rgba(135, 206, 235, 0.75);
       border-radius: 25px;
-      padding: 10rem 30% 5rem 2rem;
+      padding: 7rem 30% 4rem 2rem;
+      margin-right: 30%;
     }
 
     .Top-Wrapper__form-wrapper{
       box-sizing: border-box;
-      width: 30%;
+      width: 350px;
       background: white;
       border-radius: 25px;
       padding: max(10px,2%);
@@ -114,4 +117,64 @@
 }
 #red{
   background: transparentize(red, .3);
+}
+
+@media (max-width: 1150px){
+  .Vue-BMI-Calculator-Wrapper{
+    .Top-Wrapper{
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 1023px){
+  .Vue-BMI-Calculator-Wrapper {
+    .Top-Wrapper__heading {
+      width: 60% !important;
+      margin-right: 0 !important;
+      padding-right: 10% !important;
+    }
+    .Top-Wrapper__form-wrapper{
+      width: 40% !important;
+      position: unset !important;
+    }
+  }
+}
+
+@media (max-width: variables.$tablet) {
+  .Vue-BMI-Calculator-Wrapper {
+    background:rgba(135, 206, 235, 0.75);
+    border-radius: 25px;
+    padding-bottom: 5rem;
+    .Top-Wrapper {
+      flex-direction: column !important;
+      align-items: center;
+
+      &__heading {
+        width:100% !important;
+        margin-right: 0 !important;
+        padding: 2rem !important;
+        height: 100%;
+        background: none !important;
+        text-align: center;
+      }
+
+      .Top-Wrapper__form-wrapper {
+        width: 70% !important;
+        padding: 1rem !important;
+      }
+      .Results-Wrapper{
+        margin-right: 0 !important;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$phone) {
+  .Vue-BMI-Calculator-Wrapper {
+    .Top-Wrapper {
+      .Top-Wrapper__form-wrapper {
+        width: 94% !important;
+      }
+    }
+  }
 }
