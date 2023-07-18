@@ -11,6 +11,7 @@
 .Input-Wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  position: relative;
 }
 .Input-Wrapper > * {
   margin: 5px;
@@ -25,6 +26,25 @@
 }
 .Input-Wrapper > input:focus {
   outline: 1px solid purple;
+}
+.Input-Wrapper__submit-btn {
+  background: purple;
+  width: fit-content;
+  border-radius: 100%;
+  padding: 5px;
+  grid-area: 4/3;
+  justify-self: end;
+  z-index: 1;
+  margin: 0 !important;
+}
+.Input-Wrapper__submit-btn > img {
+  width: 40px;
+}
+.Input-Wrapper .border {
+  width: 300%;
+  border-bottom: 1px solid lightgray;
+  align-self: center;
+  margin: 0;
 }
 
 /*# sourceMappingURL=VueAgeCalculator.css.map */
