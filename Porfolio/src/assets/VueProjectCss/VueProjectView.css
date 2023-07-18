@@ -66,6 +66,11 @@ $text-color:#E6EFFF;
   .Vue-Project-View-Wrapper__applications {
     justify-content: center;
   }
+  .Vue-Project-View-Wrapper__applications-btn {
+    width: 80%;
+    text-align: center;
+    max-width: 420px;
+  }
 }
 
 /*# sourceMappingURL=VueProjectView.css.map */

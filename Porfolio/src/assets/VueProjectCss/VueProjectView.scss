@@ -65,5 +65,10 @@ $vue-blue:#35495E;
 @media (width < variables.$mobile ) {
   .Vue-Project-View-Wrapper__applications{
     justify-content: center;
+    &-btn{
+      width: 80%;
+      text-align: center;
+      max-width: 420px;
+    }
   }
 }
