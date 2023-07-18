@@ -7,6 +7,7 @@ import ImprintView from "@/views/ImprintView.vue";
 import VueProjectView from "@/views/VueProjectView.vue";
 import VueCalculator from "@/components/VueProjectComponents/VueCalculator.vue";
 import VueMathQuiz from "@/components/VueProjectComponents/VueMathQuiz.vue";
+import VueBMICalculator from "@/components/VueProjectComponents/VueBMICalculator.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -52,6 +53,11 @@ const router = createRouter({
           path: 'math-quiz',
           name: 'math-quiz',
           component: VueMathQuiz
+        },
+        {
+          path: 'BMI',
+          name: 'BMI',
+          component: VueBMICalculator
         }
       ]
     },

@@ -1,0 +1,120 @@
+/* Yellow/ivory color
+$call-to-action-color:#D4A418;
+$text-color:#E6EFFF;
+*/
+.Vue-BMI-Calculator-Wrapper {
+  display: flex;
+  flex-direction: column;
+  color: rgb(15, 23, 42);
+  font-size: 18px;
+}
+.Vue-BMI-Calculator-Wrapper p {
+  line-height: 24px;
+}
+.Vue-BMI-Calculator-Wrapper h1 {
+  line-height: 44px;
+}
+.Vue-BMI-Calculator-Wrapper .Top-Wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 0 15%;
+  position: relative;
+}
+.Vue-BMI-Calculator-Wrapper .Top-Wrapper .Top-Wrapper__heading {
+  box-sizing: border-box;
+  width: 80%;
+  background: rgba(135, 206, 235, 0.75);
+  border-radius: 25px;
+  padding: 10rem 30% 5rem 2rem;
+}
+.Vue-BMI-Calculator-Wrapper .Top-Wrapper .Top-Wrapper__form-wrapper {
+  box-sizing: border-box;
+  width: 30%;
+  background: white;
+  border-radius: 25px;
+  padding: max(10px, 2%);
+  position: absolute;
+  right: 15%;
+  top: 80px;
+}
+.Vue-BMI-Calculator-Wrapper .Top-Wrapper .Top-Wrapper__form-wrapper > h3 {
+  margin-top: 0;
+}
+.Vue-BMI-Calculator-Wrapper .Top-Wrapper .Top-Wrapper__form-wrapper .Radio-Input-Group {
+  width: 100%;
+  display: flex;
+  padding: 10px 0;
+}
+.Vue-BMI-Calculator-Wrapper .Top-Wrapper .Top-Wrapper__form-wrapper .Radio-Input-Group__single-input {
+  width: 50%;
+}
+.Vue-BMI-Calculator-Wrapper .Top-Wrapper .Top-Wrapper__form-wrapper .Number-Input-Labels {
+  display: flex;
+  width: 100%;
+  margin: 5px;
+}
+.Vue-BMI-Calculator-Wrapper .Top-Wrapper .Top-Wrapper__form-wrapper .Number-Input-Labels > label {
+  width: 50%;
+  color: rgba(15, 23, 42, 0.7);
+  font-size: 16px;
+}
+.Vue-BMI-Calculator-Wrapper .Top-Wrapper .Top-Wrapper__form-wrapper .Number-Input-Labels .large {
+  width: 100%;
+}
+.Vue-BMI-Calculator-Wrapper .Top-Wrapper .Top-Wrapper__form-wrapper .Numerical-Inputs-Wrapper {
+  display: flex;
+  gap: 5px;
+}
+.Vue-BMI-Calculator-Wrapper .Top-Wrapper .Top-Wrapper__form-wrapper .Numerical-Inputs-Wrapper .Number-Input-Wrapper {
+  border: 1px solid lightblue;
+  border-radius: 10px;
+  padding: 5px;
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+}
+.Vue-BMI-Calculator-Wrapper .Top-Wrapper .Top-Wrapper__form-wrapper .Numerical-Inputs-Wrapper .Number-Input-Wrapper__input {
+  border: none;
+  width: 100%;
+}
+.Vue-BMI-Calculator-Wrapper .Top-Wrapper .Top-Wrapper__form-wrapper .Numerical-Inputs-Wrapper .Number-Input-Wrapper__input:focus {
+  outline: none;
+}
+.Vue-BMI-Calculator-Wrapper .Top-Wrapper .Top-Wrapper__form-wrapper .Numerical-Inputs-Wrapper .Number-Input-Wrapper__unit {
+  color: #365ff6;
+  font-weight: bold;
+}
+.Vue-BMI-Calculator-Wrapper .Top-Wrapper .Top-Wrapper__form-wrapper .Results-Wrapper {
+  background: linear-gradient(to right, #365ff6 40%, rgba(54, 95, 246, 0.85));
+  border-radius: 5px 50px 50px 5px;
+  padding: 10px;
+  margin-top: 20px;
+  height: 80px;
+  margin-right: 20px;
+  display: flex;
+}
+.Vue-BMI-Calculator-Wrapper .Top-Wrapper .Top-Wrapper__form-wrapper .Results-Wrapper > div {
+  margin: auto 10px;
+}
+.Vue-BMI-Calculator-Wrapper .Top-Wrapper .Top-Wrapper__form-wrapper .Results-Wrapper h4 {
+  margin: 0 0 5px 0;
+  padding: 0;
+  color: #e6e6e6;
+}
+.Vue-BMI-Calculator-Wrapper .Top-Wrapper .Top-Wrapper__form-wrapper .Results-Wrapper p {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  color: #e6e6e6;
+}
+
+#green {
+  background: rgba(0, 128, 0, 0.7);
+}
+
+#red {
+  background: rgba(255, 0, 0, 0.7);
+}
+
+/*# sourceMappingURL=VueBMICalculator.css.map */

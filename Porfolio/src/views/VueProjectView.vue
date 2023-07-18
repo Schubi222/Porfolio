@@ -6,6 +6,7 @@
   <div class="Vue-Project-View-Wrapper__applications">
     <router-link to="/vue-projects/calculator" class="Vue-Project-View-Wrapper__applications-btn">Calculator</router-link>
     <router-link to="/vue-projects/math-quiz" class="Vue-Project-View-Wrapper__applications-btn">Math-Quiz</router-link>
+    <router-link to="/vue-projects/BMI" class="Vue-Project-View-Wrapper__applications-btn">BMI Calculator</router-link>
 
   </div>
   <router-view class="Vue-Project-View-Wrapper__router-view"/>
