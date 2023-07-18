@@ -8,6 +8,7 @@ import VueProjectView from "@/views/VueProjectView.vue";
 import VueCalculator from "@/components/VueProjectComponents/VueCalculator.vue";
 import VueMathQuiz from "@/components/VueProjectComponents/VueMathQuiz.vue";
 import VueBMICalculator from "@/components/VueProjectComponents/VueBMICalculator.vue";
+import VueAgeCalculator from "@/components/VueProjectComponents/VueAgeCalculator.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -58,6 +59,11 @@ const router = createRouter({
           path: 'BMI',
           name: 'BMI',
           component: VueBMICalculator
+        },
+        {
+          path: 'Age',
+          name: 'Age',
+          component: VueAgeCalculator
         }
       ]
     },
