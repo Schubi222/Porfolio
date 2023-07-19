@@ -22,7 +22,7 @@
   box-sizing: border-box;
   border-radius: 5px;
   border: 2px solid lightgray;
-  width: 100%;
+  width: calc(100% - 10px);
 }
 .Input-Wrapper > input:focus {
   outline: 1px solid purple;
@@ -36,6 +36,11 @@
   justify-self: end;
   z-index: 1;
   margin: 0 !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.Input-Wrapper__submit-btn:hover {
+  background: #9a009a;
 }
 .Input-Wrapper__submit-btn > img {
   width: 40px;
@@ -45,6 +50,30 @@
   border-bottom: 1px solid lightgray;
   align-self: center;
   margin: 0;
+  grid-area: 4;
+}
+
+.Output-Wrapper > * {
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+}
+.Output-Wrapper span {
+  color: purple;
+}
+
+.error-text {
+  color: darkred;
+}
+
+.error-input {
+  outline: solid 1px darkred;
+}
+
+@media (max-width: 425px) {
+  .Age-Calculator {
+    padding: 1rem;
+  }
 }
 
 /*# sourceMappingURL=VueAgeCalculator.css.map */
