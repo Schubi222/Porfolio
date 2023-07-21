@@ -26,7 +26,7 @@
       <div class="CV-Wrapper__experience">
         <ExperienceEntry v-for="entry in entry_objects" :key="entry.heading" :entry="entry"/>
       </div>
-      <a class="CV-Link animated-link" href="./src/assets/pdfs/Fabian_Schubert_Lebenslauf_eng.pdf" target="_blank" >View full CV</a>
+      <a class="CV-Link animated-link" href="/pdfs/Fabian_Schubert_Lebenslauf_eng.pdf" target="_blank" >View full CV</a>
       <div class="CV-Wrapper__projects"></div>
     </div>
   </div>

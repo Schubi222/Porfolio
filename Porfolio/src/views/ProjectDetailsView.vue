@@ -13,7 +13,7 @@
       </div>
       <div class="Project-Preview-Wrapper__content-border"></div>
       <div class="Project-Preview-Wrapper__content-img" v-if="img">
-        <img :src="'../src/assets/imgs/large_imgs/'+img" alt="Image showcasing the project">
+        <img :src="'/imgs/large_imgs/'+img" alt="Image showcasing the project">
       </div>
     </div>
   </div>
