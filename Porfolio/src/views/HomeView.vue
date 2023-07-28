@@ -16,16 +16,16 @@
         :modules="modules"
         class="mySwiper">
       <swiper-slide class="swiper_custom_slide noSelect" @click="$router.push(`/projects/${projects[0].link}`)" >
-        <img :src="'/imgs/'+searchProjectByName(projects[0].link).img" alt="" data-swiper-parallax="-20%" data-swiper-parallax-scale="1">
+        <img :src="'./imgs/'+searchProjectByName(projects[0].link).img" alt="" data-swiper-parallax="-20%" data-swiper-parallax-scale="1">
       </swiper-slide>
       <swiper-slide class="swiper_custom_slide noSelect" @click="$router.push(`/projects/${projects[1].link}`)">
-        <img :src="'/imgs/'+searchProjectByName(projects[1].link).img" alt="" data-swiper-parallax="-20%" data-swiper-parallax-scale="1">
+        <img :src="'./imgs/'+searchProjectByName(projects[1].link).img" alt="" data-swiper-parallax="-20%" data-swiper-parallax-scale="1">
       </swiper-slide>
       <swiper-slide class="swiper_custom_slide noSelect" @click="$router.push(`/projects/${projects[2].link}`)" >
-        <img :src="'/imgs/'+searchProjectByName(projects[2].link).img" alt="" data-swiper-parallax="-20%" data-swiper-parallax-scale="1">
+        <img :src="'./imgs/'+searchProjectByName(projects[2].link).img" alt="" data-swiper-parallax="-20%" data-swiper-parallax-scale="1">
       </swiper-slide>
       <swiper-slide class="swiper_custom_slide noSelect" @click="$router.push(`/projects/${projects[3].link}`)" >
-        <img :src="'/imgs/'+searchProjectByName(projects[3].link).img" alt="" data-swiper-parallax="-20%" data-swiper-parallax-scale="1">
+        <img :src="'./imgs/'+searchProjectByName(projects[3].link).img" alt="" data-swiper-parallax="-20%" data-swiper-parallax-scale="1">
       </swiper-slide>
     </swiper>
     <RouterLink class="btn big_btn noSelect" to="/projects">All Projects</RouterLink>
@@ -34,7 +34,7 @@
       <h1>My Github Statistics</h1>
       <a class="Github-Wrapper__link animated-link" href="https://github.com/Schubi222">
         <div>Want to access my repo?</div>
-        <img class="Github-Wrapper__link-icon" src="@/assets/imgs/github_logo.png" alt="github logo"/>
+        <img class="Github-Wrapper__link-icon" src="/imgs/github_logo.png" alt="github logo"/>
       </a>
       <p><img class="noSelect" src="https://github-readme-streak-stats.herokuapp.com?user=schubi222&theme=dark" alt="schubi222" /></p>
       <p><img class="Github-Wrapper__second noSelect" src="https://github-readme-stats.vercel.app/api/top-langs/?username=schubi222&langs_count=5&theme=dark" alt="schubi222" /></p>

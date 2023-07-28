@@ -7,13 +7,14 @@
       <div class="Project-Preview-Wrapper__content-description">{{description}}</div>
       <div class="Project-Preview-Wrapper__content-type">{{type}}</div>
       <div class="Project-Preview-Wrapper__content-view-project" v-if="project_link">
-        <div class="Project-Preview-Wrapper__content-view-project-link animated-link" @click="$router.push(project_link)">
+        <router-link :to="project_link" class="Project-Preview-Wrapper__content-view-project-link animated-link">
           View Project
-        </div>
+        </router-link>
       </div>
       <div class="Project-Preview-Wrapper__content-border"></div>
       <div class="Project-Preview-Wrapper__content-img" v-if="img">
-        <img :src="'/imgs/large_imgs/'+img" alt="Image showcasing the project">
+<!--FOR BUILD .. for dev nothing        -->
+        <img :src="'../imgs/large_imgs/'+img" alt="Image showcasing the project">
       </div>
     </div>
   </div>
