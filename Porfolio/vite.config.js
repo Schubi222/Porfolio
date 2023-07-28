@@ -4,6 +4,7 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
+/** @type {import('vite').UserConfig} */
 export default defineConfig({
   base:'/Portfolio/',
   plugins: [
@@ -14,8 +15,8 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   },
-  server: {
+/*  server: {
     port: 80,
     host: '0.0.0.0'
-  },
+  },*/
 })

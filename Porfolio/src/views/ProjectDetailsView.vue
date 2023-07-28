@@ -7,9 +7,9 @@
       <div class="Project-Preview-Wrapper__content-description">{{description}}</div>
       <div class="Project-Preview-Wrapper__content-type">{{type}}</div>
       <div class="Project-Preview-Wrapper__content-view-project" v-if="project_link">
-        <a class="Project-Preview-Wrapper__content-view-project-link animated-link" :href="project_link">
+        <div class="Project-Preview-Wrapper__content-view-project-link animated-link" @click="$router.push(project_link)">
           View Project
-        </a>
+        </div>
       </div>
       <div class="Project-Preview-Wrapper__content-border"></div>
       <div class="Project-Preview-Wrapper__content-img" v-if="img">
@@ -21,6 +21,7 @@
 
 <script setup>
   import projects_file from '@/assets/Data/projects.json'
+
 
   import {onMounted, ref} from "vue";
 
