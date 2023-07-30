@@ -34,8 +34,8 @@
     }
     return null;
   }
-
-  const project = searchProjectByName(window.location.pathname.split("/").pop())
+  const props = defineProps(['project_name'])
+  const project = searchProjectByName(props.project_name)
 
   const date = ref(project.date)
   const name = ref(project.name)

@@ -1,0 +1,14 @@
+@use "variables";
+.Not-Found-Wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  flex-direction: column;
+  .back{
+    color: variables.$call-to-action-color;
+    font-size: variables.$basic-font-size;
+  }
+}

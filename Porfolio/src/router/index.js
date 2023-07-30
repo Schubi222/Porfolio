@@ -9,6 +9,8 @@ import VueCalculator from "@/components/VueProjectComponents/VueCalculator.vue";
 import VueMathQuiz from "@/components/VueProjectComponents/VueMathQuiz.vue";
 import VueBMICalculator from "@/components/VueProjectComponents/VueBMICalculator.vue";
 import VueAgeCalculator from "@/components/VueProjectComponents/VueAgeCalculator.vue";
+import NotFoundView from "@/views/NotFoundView.vue";
+import data from "@/assets/Data/projects.json"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -24,9 +26,21 @@ const router = createRouter({
       component: ProjectView
     },
     {
-      path: '/projects/:name',
-      name: 'projects-:name',
-      component: ProjectDetailsView
+      path: '/projects/:project_name',
+      name: 'projects-:project_name',
+      component: ProjectDetailsView,
+      props:true,
+      beforeEnter(to, from, next){
+        const exists = data.projects.find(project => project.link === to.params.project_name)
+        if (exists){
+          next()
+        }else {
+          next(
+            { name: "projects" }
+          )
+
+        }
+      }
     },
     {
       path: '/about',
@@ -67,7 +81,11 @@ const router = createRouter({
         }
       ]
     },
-
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'NotFound',
+      component:NotFoundView
+    }
   ]
 })
 
