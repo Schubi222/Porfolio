@@ -9,7 +9,7 @@
         <img class="Footer-Bar-Wrapper__icon-wrapper__icon linked_in" src="@/assets/imgs/linkedin.png" alt="linkedIn logo"/>
       </a>
     </div>
-    <RouterLink to="/imprint" class="Footer-Bar-Wrapper__imprint animated-link">
+    <RouterLink :to="{name:'imprint'}" class="Footer-Bar-Wrapper__imprint animated-link">
       <div>Imprint</div>
     </RouterLink>
   </div>

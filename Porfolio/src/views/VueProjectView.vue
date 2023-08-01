@@ -4,10 +4,10 @@
   <div class="Vue-Project-View-Wrapper__logo"> <img class="main_Menu_Item main_Menu_Img" src="@/assets/logo.svg" alt="logo" /></div>
   <PerfectTextField :text="text" class="Vue-Project-View-Wrapper__description"/>
   <div class="Vue-Project-View-Wrapper__applications">
-    <router-link to="/vue-projects/Age" class="Vue-Project-View-Wrapper__applications-btn">Age Calculator</router-link>
-    <router-link to="/vue-projects/BMI" class="Vue-Project-View-Wrapper__applications-btn">BMI Calculator</router-link>
-    <router-link to="/vue-projects/math-quiz" class="Vue-Project-View-Wrapper__applications-btn">Math-Quiz</router-link>
-    <router-link to="/vue-projects/calculator" class="Vue-Project-View-Wrapper__applications-btn">Calculator</router-link>
+    <router-link :to="{name:'vue-projects_Age'}" class="Vue-Project-View-Wrapper__applications-btn">Age Calculator</router-link>
+    <router-link :to="{name:'vue-projects_BMI'}"  class="Vue-Project-View-Wrapper__applications-btn">BMI Calculator</router-link>
+    <router-link :to="{name:'vue-projects_math-quiz'}"  class="Vue-Project-View-Wrapper__applications-btn">Math-Quiz</router-link>
+    <router-link :to="{name:'vue-projects_calculator'}"  class="Vue-Project-View-Wrapper__applications-btn">Calculator</router-link>
 
   </div>
   <router-view class="Vue-Project-View-Wrapper__router-view"/>

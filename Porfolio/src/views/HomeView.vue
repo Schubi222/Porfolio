@@ -28,7 +28,7 @@
         <img :src="'./imgs/'+searchProjectByName(projects[3].link).img" alt="" data-swiper-parallax="-20%" data-swiper-parallax-scale="1">
       </swiper-slide>
     </swiper>
-    <RouterLink class="btn big_btn noSelect" to="/projects">All Projects</RouterLink>
+    <RouterLink class="btn big_btn noSelect" :to="{name:'projects'}">All Projects</RouterLink>
 
     <div class="Github-Wrapper">
       <h1>My Github Statistics</h1>

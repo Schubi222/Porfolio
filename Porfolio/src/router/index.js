@@ -61,22 +61,22 @@ const router = createRouter({
       children:[
         {
           path: 'calculator',
-          name: 'calculator',
+          name: 'vue-projects_calculator',
           component: VueCalculator
         },
         {
           path: 'math-quiz',
-          name: 'math-quiz',
+          name: 'vue-projects_math-quiz',
           component: VueMathQuiz
         },
         {
           path: 'BMI',
-          name: 'BMI',
+          name: 'vue-projects_BMI',
           component: VueBMICalculator
         },
         {
           path: 'Age',
-          name: 'Age',
+          name: 'vue-projects_Age',
           component: VueAgeCalculator
         }
       ]
