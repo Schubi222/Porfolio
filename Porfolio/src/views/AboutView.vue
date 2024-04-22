@@ -20,6 +20,7 @@
         <p>
           When I am not immersed in coding I like to spend my time
           <span id="Ice-Hockey-Animation">playing ice hockey</span>, <span id="Gym-Animation">working out</span>,
+          <span id="Running-Animation">running</span>,
           <span id="Read-Animation">reading books</span> or <span id="Socialise-Animation">socialising</span>.
         </p>
       </div>

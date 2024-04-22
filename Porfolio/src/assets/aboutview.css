@@ -79,4 +79,8 @@ $text-color:#E6EFFF;
   cursor: url("@/assets/imgs/social.png"), auto;
 }
 
+#Running-Animation:hover {
+  cursor: url("@/assets/imgs/running.png"), auto;
+}
+
 /*# sourceMappingURL=aboutview.css.map */

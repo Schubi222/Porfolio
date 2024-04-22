@@ -1,6 +1,14 @@
 {
   "entries": [
     {
+      "timeline":"2023-current",
+      "heading":"Working as a front-end developer",
+      "sub_heading":"At VouGee",
+      "text":"At Vougee I had the pleasure to work my first job as a front-end developer. I mainly worked on applications for mobile devices using mainly svelte.",
+      "tags":["Svelte","React","GraphQL","Rest","TS","SCSS"],
+      "link": "https://www.vougee.gmbh/"
+    },
+    {
       "timeline":"2023",
       "heading":"Self Study of Web Development",
       "sub_heading":"",
@@ -16,5 +24,6 @@
       "tags":["Coding","Learning","C++","Python","SQL","Algorithms","Data Structures"],
       "link": "https://www.tugraz.at/home"
     }
+
   ]
 }

@@ -44,6 +44,22 @@
       "type": "Website",
       "project_link":null,
       "large_img_src": "CS50.svg"
+    },
+    {
+      "name": "SpaceX",
+      "tags": [
+        "Svelte",
+        "TypeScript",
+        "SCSS",
+        "Rest API"
+      ],
+      "img": "SpaceX.png",
+      "link": "SpaceX",
+      "date": "2024",
+      "description": "The main purpose of this project was to have a project that highlights the usage of APIs.",
+      "type": "Website",
+      "project_link":null,
+      "large_img_src": "SpaceX.png"
     }
 
   ]
